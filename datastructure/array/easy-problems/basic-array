@@ -4,20 +4,38 @@
 import array as arr
 
 def main():
-        a= arr.array('i',[1,2,3])
+        a= arr.array('i',[1,2,3,5,9,6])
         print(a[0])
-
-
-
-        a.append(5)
-        print(a)
         
+        for i in range(0,5):
+        	print(a[i], end=" ")
+        print()                 #for a clean line break
+			
+                
+
+                
+        
+               
+
+
+def reverse_and_print_array():
+
+	a=arr.array('i',[1,2,3,5,9,6])
+
+	a.reverse() 
+
+	for i in a :
+                					#reverse the array
+	     print(i, end=" ")
+
 
 
 
 #call the main function
 if __name__=="__main__":
-        main()
+        main()                  			#call the original functiona;ity
+        reverse_and_print_array()   		#call the new functionality
+
 
 
 
