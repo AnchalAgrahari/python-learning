@@ -7,26 +7,39 @@ def main():
         a= arr.array('i',[1,2,3,5,9,6])
         print(a[0])
         
-        for i in range(0,5):
+        for i in range(0,6):					#print 1st 6 element
         	print(a[i], end=" ")
         print()                 #for a clean line break
-			
-                
 
-                
-        
-               
+
+        #inserting element 4,7,8, into the array
+        a.insert(3,4)
+        a.insert(4,7)
+        a.insert(5,8)
+
+        print("array after insertion:")
+        for element in a:
+        	print(element, end=" ")
+        print()
+
+
 
 
 def reverse_and_print_array():
 
-	a=arr.array('i',[1,2,3,5,9,6])
+	a= arr.array('i',[1,2,3,5,9,6])
+	a.extend([4,7,8])
+
 
 	a.reverse() 
+	print("Reversed array:")
 
 	for i in a :
                 					#reverse the array
 	     print(i, end=" ")
+	print()
+
+
 
 
 
