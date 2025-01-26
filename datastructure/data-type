@@ -20,13 +20,43 @@ print (B.center(10, '-'))				#10 in the length of the line and '-' ue to fill th
 print (B.rjust(20))
 print (B.ljust(20, '-'))
 
+#isalpha() " shows output only string is only alphabets eles shows false"
+#isalnum() " shows output when the string is characters , numbers or alphabets eles shosws fales"
+#isspace()  "return true if all the characters sre space"
+
+qwe = "abc"
+asd = "ab123"
+zxc = "     "
+
+print("For qwe : isalpha() ---> ", qwe.isalpha())
+print("For qwe : issum() ---> ", qwe.isalnum())
+print("For qwe : isspace() ---> ", qwe.isspace())
+print()
+print("For  asd : isalpha() ---> ", asd.isalpha())
+print("For  asd : issum() ---> ", asd.isalnum())
+print("For  asd : isspace() ---> ", asd.isspace())
+print()
+print("For  zxc : isalpha() ---> ", zxc.isalpha())
+print("For  zxc : issum() ---> ", zxc.isalnum())
+print("For  zxc : isspace() ---> ", zxc.isspace())
+print()
 
 
+#join()  " join the sequence of the join with other"
+Ab = [ "Art", "of", "SEDUCTION"]
+s = "_"
+print(s.join(Ab))
 
 
+#find() and rfind()  " 'find' the first occurence of the element and 'rfind' finds the last occurence of the element "
 
+str = "It is pointless to try to argue againest such power called seduction, to imagine that you are not intrested in it, or that it is evil and ugly. The harder you try to resist the lure of seduction -- as an idea, as a form of power __the more you will find yourself facinated"
 
+print("The first occurence of 'it' at : ")					#we can write in both the manner
+print(str.find ("it"))
 
+print("The last occurence of 'it' at : ")
+print(str.rfind ("it",0,len(str)))
 
 
 
