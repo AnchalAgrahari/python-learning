@@ -4,26 +4,29 @@ from pickle import TRUE
 
 print ("hellp world")
 
-print("hii there !!!")
+#to get lenght of the string.
+
+A =" I know the basic but still let's end this today !! hoping soo !!!!"
+print(len(A))
+
+#to count to the word or substance in the entir project 
+
+print(A.count("!", 0, len(A)))
+
+#Adjustment of the string    [ center(), ljust(), rjust()].
+
+B= "hii"
+print (B.center(10, '-'))				#10 in the length of the line and '-' ue to fill the empty space 
+print (B.rjust(20))
+print (B.ljust(20, '-'))
 
 
 
 
 
-print("hyee")
 
 
 
-
-
-import array as arr
-
-# Integer array example
-a = arr.array('i', [1, 2, 3])
-print("Integer Array before insertion:", *a)
-
-a.insert(1, 4)  # Insert 4 at index 1
-print("Integer Array after insertion:", *a)
 
 
 
