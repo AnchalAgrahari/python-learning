@@ -1,0 +1,200 @@
+
+from pickle import TRUE
+
+
+print ("hellp world")
+
+#to get lenght of the string.
+
+A =" I know the basic but still let's end this today !! hoping soo !!!!"
+print(len(A))
+
+#to count to the word or substance in the entir project 
+
+print(A.count("!", 0, len(A)))
+
+#Adjustment of the string    [ center(), ljust(), rjust()].
+
+B= "hii"
+print (B.center(10, '-'))				#10 in the length of the line and '-' ue to fill the empty space 
+print (B.rjust(20))
+print (B.ljust(20, '-'))
+
+#isalpha() " shows output only string is only alphabets eles shows false"
+#isalnum() " shows output when the string is characters , numbers or alphabets eles shosws fales"
+#isspace()  "return true if all the characters sre space"
+
+qwe = "abc"
+asd = "ab123"
+zxc = "     "
+
+print("For qwe : isalpha() ---> ", qwe.isalpha())
+print("For qwe : issum() ---> ", qwe.isalnum())
+print("For qwe : isspace() ---> ", qwe.isspace())
+print()
+print("For  asd : isalpha() ---> ", asd.isalpha())
+print("For  asd : issum() ---> ", asd.isalnum())
+print("For  asd : isspace() ---> ", asd.isspace())
+print()
+print("For  zxc : isalpha() ---> ", zxc.isalpha())
+print("For  zxc : issum() ---> ", zxc.isalnum())
+print("For  zxc : isspace() ---> ", zxc.isspace())
+print()
+
+
+#join()  " join the sequence of the join with other"
+Ab = [ "Art", "of", "SEDUCTION"]
+s = "_"
+print(s.join(Ab))
+
+
+#find() and rfind()  " 'find' the first occurence of the element and 'rfind' finds the last occurence of the element "
+
+str = " It is pointless to try to argue againest such power called seduction, to imagine that you are not intrested in it, or that it is evil and ugly. The harder you try to resist the lure of seduction -- as an idea, as a form of power __the more you will find yourself facinated"
+
+print("The first occurence of 'it' at : ")					
+print(str.find ("it"))
+
+print("The last occurence of 'it' at : ")
+print(str.rfind ("it",0,len(str)))					#we can write in both the manner
+
+print(len(str))
+
+print (str.find("in"), str.rfind("as"))					#we can go for different words 
+
+#startswith() and endswith()   "gives false if the output is not starts and ends with the given words"
+
+str = " It is pointless to try to argue againest such power called seduction, to imagine that you are not intrested in it, or that it is evil and ugly. The harder you try to resist the lure of seduction -- as an idea, as a form of power __the more you will find yourself facinated "
+
+B= " It "
+C= " Facinated "
+D= " facinated "
+if (str.startswith(B)):
+	print("str starts with B")
+else:
+	print("str dose not starts with B")
+
+if (str.endswith(C)):
+    print("str starts with C")
+else:
+	print("str dose not starts with C")
+
+if (str.endswith(D)):
+	print("str ends with D")
+else:
+	print("str dose not starts with D")
+
+
+##isupper() and islower()  " print true and false"
+#upper() 			"print the output in upper case"
+#lower()			"print the output in lower case"
+#tilte()			"print 1st letter of word into upprt case"
+#swapcase()			"print upper into lower and loweer into upper"
+
+
+A = "Suduction is a game of PSYCHOLOGY not a BEAUTY"
+print("output in upper: ", A.upper())
+print("output in lower: ", A.lower())
+print ("output in title: ", A.title())
+print("output in swapcase: ", A.swapcase())
+
+
+
+
+ #strip() "to delete all '-' "
+#lstrip() "to delete all leading '-' "
+#rstrip  "to delete all trailling '-' "
+
+stri = "----Anchal----"
+
+print( stri.strip('-'))
+print(stri.lstrip('-'))
+print(stri.rstrip('-'))
+
+
+#min() "print samllest(least occurence ) character "
+#max() "print the largest(most occurence) character "
+
+
+A = "Suduction is a game of PSYCHOLOGY not a BEAUTY"
+
+print ("The minimum value character is : "+min(A))
+print ("The maximum value chatacter is : "+max(A))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
