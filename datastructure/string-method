@@ -112,8 +112,8 @@ print(stri.lstrip('-'))
 print(stri.rstrip('-'))
 
 
-#min() "print samllest(least occurence ) character "
-#max() "print the largest(most occurence) character "
+#min() "print samllest valued character "
+#max() "print the largest valued character "
 
 
 A = "Suduction is a game of PSYCHOLOGY not a BEAUTY"
