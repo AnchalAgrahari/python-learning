@@ -1,2 +1,225 @@
-  print ("Hwllo world")
-  
+
+
+
+
+
+print("Hello world")
+
+
+#in and not in :   "to check the element is present or not "
+
+l = [1,2,3,4,35,7,56,79,7,9,0,43,5,7]
+
+if 67 in l:
+	print("67 is present")
+elif 67 not in l:
+	print ("67 in not present ")
+
+
+#len(), min(), max()
+ 
+l=[1,2,3,45,7,8,9,34,56,77,8,90]
+print("the length of list is : ", len(l))
+print("the maximum occurence of element : ",max(l))
+print("the minimum occurence of element : ",min(l))
+
+
+#use of "+"and "*"   "  '+' add the lists and '*' print list numbers of time "
+
+l1=[1,2,3]
+l2=[4,5,6]
+l3=[7,8,9]
+
+print (l1+l2+l3)
+l4=l1*5
+print(l4)
+
+
+#index() and count()
+
+l = [1,2,3,4,5,6,7,8,9]
+print(l.index(5))
+print(l.count(5))
+
+
+#del(list[a:b])        "removees all the element from a to b-1"
+#pop()					"delete the mentioned position element"
+
+
+l1 = [1,2,3,4,5,6,7,8,9]
+l2 = [1,2,3,4,5,6,7,8,9,10]
+del(l1[1:5])
+print(l1)
+l2.pop(5)
+print (l2)
+
+
+#insert(i,x)				"insert x element in the ith position"
+#remove(x)					"remove the first occurence of the element x in argument"
+
+l1 = [1,2,3,4,4,5,6,7,8,9]
+
+l1.insert(10,10)
+print("after inserting of the element :",l1)
+l1.remove(4)
+print("after removing of the extra element :",l1)
+
+
+#sort()			"it reassemble the list in it's order"
+#revers1()
+
+l1 = [1,2,3,4,5,6,23,56,98,7,8,9]
+l1.sort()
+print("list after sorting it :",l1)
+l1.reverse()
+print("list after reversing it:",l1)
+
+
+
+#extend(<list>)					"extent the list1 using list2"
+#clear 							"clear the element of the list"
+
+l=[12,34,6,7,8,96,53,2,1]
+l1=[4,6,89,75,2,2,4,6,7,9]
+l.extend(l1)
+print(l)
+l.clear()
+print(l1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
