@@ -1,0 +1,123 @@
+
+
+#while(expression)loop:			"if the condition is true the output will be in "
+
+count = 1
+while(count < 3):
+	print("Hii")
+	count = count +1
+
+
+
+#for loop :						"all the words will be altrated 'line by line' "
+
+l = ["hii there!","hii there!"]
+for i in l:
+	print(i)
+
+#nested for loop:				""
+# for loop in sequence:
+#	 for loop in sequence:
+#		statements(s):
+#		statements(s):
+
+
+#nested while loop:
+#while expression():
+#	while expression():
+#		statement(s):
+#		statement(s):
+
+
+l=["this","is","nestend","for","and","while","loop"]
+for word in l:
+	
+		print(word)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
