@@ -15,7 +15,7 @@ l = ["hii there!","hii there!"]
 for i in l:
 	print(i)
 
-#nested for loop:				""
+#nested for loop:				"print the letter one by one line wise"
 # for loop in sequence:
 #	 for loop in sequence:
 #		statements(s):
@@ -31,17 +31,55 @@ for i in l:
 
 l=["this","is","nestend","for","and","while","loop"]
 for word in l:
-	
-		print(word)
+	for character in word:
+		print(character)
 
 
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+
+####loop control statement : 
+
+#continue statement 				"continues the statement even after encountering the firest letter 'e'or 's' "
+l = "set your heart ablaze"
+for letter in l:
+	if(letter == 'e' or letter =='s'):
+		continue;
+	else:
+		print (letter)
+
+#break statement :				"break the statement after encountering the firest letter 'e'or 's' "
+
+l = "set your heart ablaze"
+for letter in l:
+	if(letter == 'e' or letter =='s'):
+		break;
+	else:
+		print (letter)
+
+print(" ")
+
+#pass statement:		
+
+l = "set your heart ablaze"
+for letter in l:
+	pass;
+	print (letter)
 
 
+###############################################################################
 
+#split statement:				"split the string into list with space "
 
+s="hii hello "
+l=s.split()
+print(l)						#{this is the output :: ['hii', 'hello'] }	
 
-
-
+s="hii , hello"					#"split the string into list with comma "
+l=s.split(',')
+print(l)						#{this is the output :: ['hii', 'hello'] }	
 
 
 
