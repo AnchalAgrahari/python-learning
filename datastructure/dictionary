@@ -1,0 +1,201 @@
+##DICTIONARY 				
+
+d=dict()									#empty dictionary
+print (d)
+
+#inputing the valuse inside the dictonary
+
+d['My name is '] = 'Anchal'									#"string should be in single inverted comma and for the numbers it is not imp. 
+d['my age is']= 20
+
+print(d)
+
+
+print(" ")
+
+#|||||inputs are before equal to is called keys
+
+#if we only want to print kyes ::
+
+d['My name is '] = 'Anchal'		
+d['my age is']= 20
+print(d.keys())
+
+
+print(" ")
+
+
+#|||||inputs are after equal to is called values
+
+
+print(d.values())
+
+print(" ")
+
+#to delete
+
+del d['my age is']
+print(d)
+
+
+print(" ")
+
+
+##decleration of dictionary by using curly brackets
+
+d= {'My name is': 'Anchal'}
+print(d)
+print('my age is ' in d)			"we can check whether it present in dic or not"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
