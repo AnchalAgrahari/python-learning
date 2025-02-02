@@ -45,53 +45,44 @@ print(" ")
 
 d= {'My name is': 'Anchal'}
 print(d)
-print('my age is ' in d)			"we can check whether it present in dic or not"
+print('my age is ' in d)			#"we can check whether it present in dic or not"
+
+print(" ")
+
+print(len(d))						#key value pair number
+
+#dictionarry into string
+
+d={'qwe':1,'asd':2,'zxc':3}
+str1=str(d)
+print(str1)
+print(str1[5:10])								#printing character of 6 to 10 
+print(len(d))
 
 
+print(" ")
 
 
+#items()						#use to return the list of all the dictioanry with value and kyes
 
+d={'qwe':1,'asd':2,'zxc':3}
+print(d.items())
 
+print(" ")
 
+#copy() and clear()
+d={'qwe':1,'asd':2,'zxc':3}
+d2={}
+d2=d.copy()
 
+print(d)
+print(d2)
 
+d3={}
+d3=d.clear()
+print(d3)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(" ")
 
 
 
