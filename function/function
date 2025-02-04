@@ -1,0 +1,416 @@
+###################			FUNCTION
+
+
+
+#update() function
+
+d={'name':'Anchal','age':20}
+d1={'roll no':12404032092}
+d.update(d1)
+print(d)
+
+
+print(" ")
+
+#get(key,def_value)function()					
+
+d={'Name':'Anchal','Age':20}
+print(d.get('Name',"Not Present"))
+print(d.get('Age',"Not Present"))
+print(d.get('roll no'"Not Present"))
+print(d)
+
+print("  ")
+
+
+#setdefault function               				"it set the input for not present value or kyes"
+
+
+d={'Name':'Anchal','Age':20}
+print(d.setdefault('Name',"Not Present"))
+print(d.setdefault('Age',"Not Present"))
+print(d.setdefault('roll no',"Not Present"))
+print(d)
+
+
+print("  ")
+
+
+
+############################					type coversion
+
+
+
+
+#int(a,base) and float()
+a = "1001"													#only use binary numbers
+print(int(a,2))
+print(int(a,10))
+print(float(a))
+
+
+print("  ")
+
+
+#ord(), hex(), and oct()
+
+
+char = ' '
+num = 25
+print("ASCII vale for space is : ", ord(char))
+print("Hexadesimal value for 25 is :", hex(num))
+print("Octal value for 25 is :",oct(num))
+
+print(" ")
+
+#tuple(), set() and list)
+ASD = "Aanchal"
+
+print("The tuple conversion for the string is :",tuple(ASD))				#output: (), ordered
+print("The set conversion for the string is :",set(ASD))					#output: {}, not in order
+print("The list conservation of the string is :",list(ASD))					#output: [], ordered
+
+
+print(" ")
+
+
+#str() and complex(real,imaginary)			"convert real number into complex and convert datatype into string"
+
+print("Complex number:",complex(1,3))
+
+srt= str(1234)
+print(srt[0:4])
+
+
+
+############################				#OPERATOR FUNCTION
+
+
+
+
+
+#increment{x+} and decrement(x-)					//do not use x++ or x--
+
+x =3
+x+=2
+print(x)
+x-=1
+print(x)
+
+print(" ")
+
+#division "/","//"					"/":give float vale as well and "//": give only integer
+
+print(25.6/6)							#output: 4.2666666...
+print(25.6//6)							#output: 4.0
+print(-25.6/6)							#output: -4.2666...
+
+print(" ")
+
+#any :gives if any one is true
+#all : give true only when all are true
+
+l1= [False , False]
+l2=[True, True]
+l3=[True,False]
+print(l1)
+print(l2)
+print(l3)
+print ("any for list 1:",any(l1))
+print ("any for list 2:",any(l2))
+print ("any for list 3:",any(l3))
+print ("all for list 1:",all(l1))
+print ("all for list 2:",all(l2))
+print ("all for list 3:",all(l3))
+
+
+# add(), sub(), mul()
+
+#////must import operator
+
+import operator
+print(operator.add(5,7))			
+print(operator.sub(5,7))
+print(operator.mul(5,7))
+
+print(" ")
+
+#truediv(a,b)			:returns the flooting of argument  [a/b]
+#floordiv(a,b)			:return the floor of divivsion of two argument [a//b]
+#pow(a,b)				:power [a**b]
+#mod(a,b)				:modulus [a%b]
+
+import operator
+a=5
+b=4
+print(operator.truediv(a,b))
+print(operator.floordiv(a,b))
+print(operator.pow(a,b))
+print(operator.mod(a,b))
+
+print(" ")
+
+
+#lt(a,b)			:returns true if  a lessthen b(a<b)
+#le(a,b)			:returns true if a lessthen or equal b(a<=b)
+#eq(a,b)			:returns true when a is equalto b(a=b)
+
+
+import operator
+print("lt functon for 2,3:",operator.lt(2,3))
+print("le functon for 2,3:",operator.le(2,3))
+print("eq functon for 2,3:",operator.eq(2,3))
+print("lt functon for 2,2:",operator.lt(2,2))
+print("le functon for 2,2:",operator.le(2,2))
+print("eq functon for 2,2:",operator.eq(2,2))
+
+print(" ")
+
+
+#gt(a,b)			:returns true if  a graterthen b(a>b)
+#ge(a,b)			:returns true if a graterthen or equal b(a=>b)
+#ne(a,b)			:returns true when a is not-equalto b(a!=b)
+
+import operator
+print("gt functon for 2,3:",operator.gt(2,3))
+print("ge functon for 2,3:",operator.ge(2,3))
+print("ne functon for 2,3:",operator.ne(2,3))
+print("gt functon for 2,2:",operator.gt(2,2))
+print("ge functon for 2,2:",operator.ge(2,2))
+print("ne functon for 2,2:",operator.ne(2,2))
+
+print(" ")
+
+
+
+
+###############							PYTHON CODE TO DEMONSTRATE WORKING FOR 
+
+
+
+
+#setitem()  		:setitem is assigne object to perticular position with value 		:--> object[position] = value
+#delitem()			:is assign to delete item 											 :--> del object[position]
+#getitem()			:to find the presence 												 :--> object [position]
+
+#import operatro module
+
+import operator
+l=[1,2,3,4,6,7]
+print(l)		
+operator.setitem(l,4,5)
+print("after the changing the value index 4",l)
+operator.delitem(l,4)
+print("after the deleting the value index 4",l)
+
+
+print(" ")
+print ("value at index2:", operator.getitem(l,2))
+
+print(" ")
+
+
+#slice operator
+#slice in setitem set the new value in the given poition
+#slice in the delitem will delete the item of given position and then set the new value after it
+#getitem give the value of asked positon from new argument
+
+import operator
+l=[1,2,3,4,6,7]
+print(l)		
+operator.setitem(l,slice(4,5),[100,101])  #slice(a,b)--> a to b-1
+print("after the changing the value index 4",l)
+
+operator.delitem(l,slice(2,3))
+print("after the deleting the value index 2 and 3",l)
+
+print(" ")
+print ("value at index2:", operator.getitem(l,slice(2,4)))
+
+
+print(" ")
+#concat()							:concatinate two object
+#contains()							: if the list contains the object or not
+
+#importing module
+import operator
+s1="if you win. you live. if lose. you die."
+s2=" if you don't fight, you can't win"
+
+#using concat to concatenate two string
+
+print("the concatenated string is :", operator.concat(s1,s2))
+print()
+
+#using contain to check if s1 present in s2
+
+if(operator.contains(s1,s2)):
+	print("s1 contains s2")
+else :
+	print("s1 dosen't conatains s2")
+
+
+print(" ")
+
+
+#and_(), 					:returns 1 if both are one
+#or_(), 					:returns 1 if at least one bit is 1
+#xor()						:return 1 if both bits are different
+
+import operator
+
+a =1
+b=0
+print('a=1')
+print('b=2')
+
+#using and_() to show ythe bitwise and operators
+print("the bitwise and of a and b is :",operator.and_(a,b))
+print()
+
+
+#using or_() to show ythe bitwise and operators
+print("the bitwise or of a and b is :",operator.or_(a,b))
+print()
+
+
+#using xor_() to show ythe bitwise and operators
+print("the bitwise xor of a and b is :",operator.xor(a,b))
+print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
