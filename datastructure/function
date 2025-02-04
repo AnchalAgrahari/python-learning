@@ -220,10 +220,12 @@ s1="if you win. you live. if lose. you die."
 s2=" if you don't fight, you can't win"
 
 #using concat to concatenate two string
+
 print("the concatenated string is :", operator.concat(s1,s2))
 print()
 
 #using contain to check if s1 present in s2
+
 if(operator.contains(s1,s2)):
 	print("s1 contains s2")
 else :
@@ -233,19 +235,30 @@ else :
 print(" ")
 
 
+#and_(), 					:returns 1 if both are one
+#or_(), 					:returns 1 if at least one bit is 1
+#xor()						:return 1 if both bits are different
+
+import operator
+
+a =1
+b=0
+print('a=1')
+print('b=2')
+
+#using and_() to show ythe bitwise and operators
+print("the bitwise and of a and b is :",operator.and_(a,b))
+print()
 
 
+#using or_() to show ythe bitwise and operators
+print("the bitwise or of a and b is :",operator.or_(a,b))
+print()
 
 
-
-
-
-
-
-
-
-
-
+#using xor_() to show ythe bitwise and operators
+print("the bitwise xor of a and b is :",operator.xor(a,b))
+print()
 
 
 
