@@ -1,4 +1,6 @@
-###################functions:::
+###################			FUNCTION
+
+
 
 #update() function
 
@@ -33,8 +35,12 @@ print(d)
 
 print("  ")
 
-###############################################################################
-#type coversion
+
+
+############################					type coversion
+
+
+
 
 #int(a,base) and float()
 a = "1001"													#only use binary numbers
@@ -75,8 +81,13 @@ print("Complex number:",complex(1,3))
 srt= str(1234)
 print(srt[0:4])
 
-##############################################################################
-#operator function
+
+
+############################				#OPERATOR FUNCTION
+
+
+
+
 
 #increment{x+} and decrement(x-)					//do not use x++ or x--
 
@@ -170,7 +181,14 @@ print("ne functon for 2,2:",operator.ne(2,2))
 
 print(" ")
 
-###############python code to demonstrate working for
+
+
+
+###############							PYTHON CODE TO DEMONSTRATE WORKING FOR 
+
+
+
+
 #setitem()  		:setitem is assigne object to perticular position with value 		:--> object[position] = value
 #delitem()			:is assign to delete item 											 :--> del object[position]
 #getitem()			:to find the presence 												 :--> object [position]
@@ -266,6 +284,134 @@ print()
 
 
 
+
+
+############# 						  MODULE FUNCTION 		
+
+#################math module
+
+import math
+print(dir(math))
+
+#sqrt:	using root(sqrt)function conatrined							
+#degrees:  
+#radians:
+#sin:
+#tan:
+#factorial:
+
+import math
+print(math.sqrt(5))
+print(math.degrees(2))
+print(math.radians(6))
+print(math.sin(60))
+print(math.cos(60))
+print(math.tan(60))
+print(math.factorial(5))
+
+print(" ")
+
+
+#################			##RANDOM MODULE 				:printthe random value from the given condition
+
+
+
+import random
+
+#print random integer between 0 to 10
+print(random.randint(1,10))
+
+#print random flooting between 0 to 1
+print(random.random())
+
+list =[1,4, 876, "python" , 45]
+
+#using choice function in randon module for choosing
+#a random element from a set such as a list
+
+print(random.choice(list))
+ 
+print(" ")
+##############				##DATETIME
+
+import datetime
+print(datetime.date.today())
+print(datetime.datetime.now())
+
+print(" ")
+
+# ##################################			RE EXPRESSION
+
+
+
+#compile() creats regular expression character class [a-e]
+#which is similar to [abcde]
+#class [abcde] will matcg srting wuth 'a','b','c','d','e'
+#here when we use compile the occurence of a b c d e are print in sequence
+
+import re
+p = re.compile('[a-z]')
+pp = re.compile('[A-Z]')
+
+print(p.findall("Hello"))
+print(pp.findall("Hello"))
+
+
+# \d expression 			: print the occurence of number [0-9]{letters}
+#\d+ expression 			: print the occurence of complete number [0-9]{words}
+
+import re
+p= re.compile('\d')
+print(p.findall("12,35,789,3456"))
+
+p= re.compile('\d+')
+print(p.findall("12,35,789,3456"))
+
+print(" ")
+
+#\w expression 			:print the occurence [a-zA-Z0-9]{letters}
+#\w+ expression 		:print the alphanumaric character[a-zA-Z]{words}
+#\W expression 			:print the non alphanumeric character 
+
+import re
+p= re.compile('\w')
+print(p.findall("My password is P@ssw0rd123!"))
+
+p= re.compile('\w+')
+print(p.findall("My password is P@ssw0rd123!"))
+
+p= re.compile('\W')
+print(p.findall("My password is P@ssw0rd123!"))
+
+print(" ")
+
+
+							#SPLIT FUNCTION								:using the split function we can split the the string into the list on the basics of pattern
+
+from re import split
+
+
+print(split('\W+','The price of the book is 25.99 isn,t it amazing'))				#:SPLIT BY WORDE 
+
+print(split('\d+','The price of the book is 25.99 isn,t it amazing'))				#:SPLIT BY NUMBERS
+
+print(" ")
+
+						#escape() function : returns the string with backslesh '\', before every nonalphanumeric character
+import re
+print(re.escape("The price of the book is 25.99 isn,t it amazing"))
+
+
+#######sub and subn function 			:
+
+import re 
+print(re.sub('ub','~*','set your uber address'))
+
+print(re.sub('ub','~*','set your uber address', count=0, flags=0))
+
+print(re.subn('ub','~*','set your uber address'))
+
+###//////////uber turn into ~*br
 
 
 
