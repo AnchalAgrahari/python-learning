@@ -65,8 +65,17 @@ print(col_count)
 
 print(list(col_count.elements()))
 
+print(" ")
+ 
+##most function
 
+from collections import Counter
 
+coun = Counter(a=334,c=5674,g=9000,d=65434,j=7765543,x=76549,r=0)
+#this print most frequent character
+
+for letter, count in coun.most_common(2):
+	print('%s:%d' %(letter,count))
 
 
 
