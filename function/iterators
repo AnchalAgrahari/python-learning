@@ -1,0 +1,136 @@
+
+##					BUILD-IN ITERATORS 	
+
+#Iteration over list
+print("List of Iteration")
+l =["set ","your","heart","ablazed"]
+for i in l:
+	print(i)
+	print(" ")
+
+#Iteration  over tuples (immutable)
+print("\n Tuple Iteration")
+o= ("set ","your","heart","ablazed")
+for i in o:
+	print(i)
+print(" ")
+
+#iteration over a string
+print("\n String Iteration")
+w= "set your heart ablazed"
+for i in w:
+	print(i)
+print(" ")
+
+#Iteration over dictionary
+print("\n Dictionary Iteration")
+d= dict()
+d['wer']=123
+d['fgh']=567
+for i in d:
+	print("%s:%d" %(i,d[i]))
+print(" ")
+
+
+##accumulate() and chain()
+
+#accumulate(iter, func)
+#chain(iter1, iter2...)
+#importing "itertools" for iterator operation
+import itertools
+
+#importing "operator" for iterator operation
+import operator
+ 
+list1 =[1,2,3,4]
+list2 =[4,5,7,8]
+list3 =[2,5,8,0]
+ 
+#using accumulate() for sumation, multipilcation
+
+print("The sum after each iterator is : ")
+print(list(itertools.accumulate(list1)))
+
+print("The product after each iterator is : ")
+print(list(itertools.accumulate(list1, operator.mul)))
+
+
+#using chain() to print al element of list
+print("The mention in chain is :")
+print(list(itertools.chain(list1,list2,list3)))
+
+
+print(" ")
+
+#compress()
+
+import itertools
+print("The compressed value of string")
+print(list(itertools.compress('HELLOWORLD',[1,1,0,0,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1])))
+
+#as the bollean list given only 1 valued letter print
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
