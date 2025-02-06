@@ -37,18 +37,33 @@ c2=Counter(A=1,F=7,H=9)
 
 c1.subtract(c2)
 print(c1)
+print(" ")
 
 
+###creating a list::
+
+from collections import Counter
+
+z= ['red','blue','white','red','white']
+col_count =Counter(z)
+print(col_count)
+
+col = ['red','blue','white','green']
+
+for color in col:
+	print(color,col_count[color])
 
 
+####for element function::
+
+from collections import Counter
 
 
+col_count =Counter(a=1,b=2,c=3)
+print(col_count)
 
 
-
-
-
-
+print(list(col_count.elements()))
 
 
 
