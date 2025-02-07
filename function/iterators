@@ -32,7 +32,7 @@ for i in d:
 print(" ")
 
 
-##accumulate() and chain()
+##						accumulate() and chain()
 
 #accumulate(iter, func)
 #chain(iter1, iter2...)
@@ -62,7 +62,7 @@ print(list(itertools.chain(list1,list2,list3)))
 
 print(" ")
 
-#compress()
+#			COMPRESS()
 
 import itertools
 print("The compressed value of string")
@@ -71,7 +71,26 @@ print(list(itertools.compress('HELLOWORLD',[1,1,0,0,0,1,0,1,1,0,1,1,0,1,0,1,1,0,
 #as the bollean list given only 1 valued letter print
 
 
+##						islice(iterable, start, stop, step
+#			starmap(fun, tuple list)
 
+import itertools
+import operator
+
+lst=[2,4,6,7,9,4,2,1]
+
+lis=[[1,2,3],[4,5,6],[7,8,9]]
+ 
+##using islice() to slice the list 
+
+print("The sliced list values are :")
+print(list(itertools.islice(lst,1,4)))
+
+##using starmap() function for selection value acc. to function
+
+print("The values acc. to function are :")
+print(list(itertools.starmap(min, lis)))
+print(list(itertools.starmap(max, lis)))
 
 
 
