@@ -91,27 +91,56 @@ print(list(itertools.islice(lst,1,4)))
 print("The values acc. to function are :")
 print(list(itertools.starmap(min, lis)))
 print(list(itertools.starmap(max, lis)))
+print(" ")
 
 
+#			takewhile(func, iterable)
+#	tee(iterator, count)
+
+import itertools
+lsi=[1,2,3,4,5,6,7,8]
+# shorting list in itertor
+iti = iter(lsi)
+
+#using the takewhile() to print the value untile the condition is flase
+print("the list values till 1st false value are :", end=" ")
+print(list(itertools.takewhile(lambda x : x%2==0,lsi)))
+
+#using tee to make a list of iterator
+#making list of 3 iterator of the same values.
+
+it= itertools.tee(iti, 3)
+print("The iterator are:")
+for i in range (0,3):
+	print(list(it[i]))
 
 
+#					product(iter1, iter2)		:
+#   			permutations(iter, group_size)   :print the possible value of iter in the give group size 
 
 
+import itertools
+
+#using produch to print the cartesian product
+print("The certiationa product of the containers is : ")
+print(list(itertools.product('AB','12')))
+
+#using permuntations to compute all possible permuntations
+print("All the permuntation of the given containers is :")
+print (list(itertools.permutations('SDF',3)))
 
 
+#  							combination(iter, group_size)
+#					combinaion_with_replacement(iter, group_size)
 
+import itertools
+print("All the combination in sorted orde (without replacement): ")
+print(list(itertools.combinations('asd',2)))
 
+print(" ")
 
-
-
-
-
-
-
-
-
-
-
+print("All the cmbination with replacement in sorted order : ")
+print(list(itertools.combinations_with_replacement('asd',3)))
 
 
 
