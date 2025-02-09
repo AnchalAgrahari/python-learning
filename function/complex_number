@@ -1,0 +1,169 @@
+# complex number and theri operations in python
+
+# 						exp(),log()
+
+
+import cmath				#works with complex numbers 
+import math 				#works with real numbers
+
+X= 1.0
+Y= 1.0
+
+#converting Y, and X  into complex
+
+Z= complex(X,Y)
+
+
+#printing the exponent of the complex number
+print("The exponent of the complex number")
+print(cmath.exp(Z))
+
+
+#printing the log form of complex number
+print("The (log base 2)form of thr complex number")
+print(cmath.log(Z,2))
+
+print(" ")
+
+
+#								log10(), sqrt()
+
+import math 
+import cmath
+
+X= 1.0
+Y= 1.0
+
+#converting Y, and X  into complex
+
+Z= complex(X,Y)
+
+
+#printing log10of the complex number
+print("Thelog10 the complex number")
+print(cmath.log10(Z))
+
+
+#printing squar root form of complex number
+print("The square root of thr complex number")
+print(cmath.sqrt(Z))
+
+print(" ")
+
+
+#				isfinite(), isinf(), isnan()
+
+import cmath
+import math
+
+#initializing real number
+
+A = 1
+B = 1.0
+x = math.inf
+y = math.nan
+
+Z= complex(A,B)
+
+W = complex(A,x)
+
+V = complex(B,y)
+
+
+#checking if the both number is finite:
+if cmath.isfinite(Z):
+	print("Complex number Z finite. ")
+else : print("Complex number Z infinite. ")
+
+print(" ")
+
+#checking if the either number is/are infinite:
+
+if cmath.isinf(W):
+	print("Complex number W infinte. ")
+else : print("Complex number W finite. ")
+
+print(" ")
+
+#checking if the either of the complex number is/are infintie
+if cmath.isnan(V):
+	print("Complex number V NaN")
+else : print("Complex number V is not NaN")
+
+
+
+#					pi and e
+
+
+import cmath 
+import math
+
+print("The value of pi is : ", end="")
+print(cmath.pi)
+
+print(" ")
+
+print("The vale of exponent is : ", end="")
+print(cmath.e)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
