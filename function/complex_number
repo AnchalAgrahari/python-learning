@@ -106,23 +106,72 @@ print(" ")
 print("The vale of exponent is : ", end="")
 print(cmath.e)
 
+print(" ")
+
+#			sin(), cos(), tan(),	:print sin , cos , tan values oof strings
+
+import cmath
+x = 1.0
+y = 1.0
+
+z= complex(x,y)
+print("The sin value of complex number is :", end="")
+print(cmath.sin(z))
+print("The cos value of complex number is :")
+print(cmath.cos(z))
+print("The tan value of complex number is :")
+print(cmath.tan(z))
+print(" ")
 
 
+#		    			inverse	: print the arc sin arc cos and arc tan values of variable.
 
 
+import cmath
+x = 1.0
+y = 1.0
+
+z= complex(x,y)
+print("The asin value of complex number is :", end="")
+print(cmath.asin(z))
+print("The acos value of complex number is :")
+print(cmath.acos(z))
+print("The atan value of complex number is :")
+print(cmath.atan(z))
+
+print(" ")
+
+#				hypabolic trignomertic values ['trign"h" ']
 
 
+import cmath
+x = 1.0
+y = 1.0
+
+z= complex(x,y)
+print("The hyperbolic sin value of complex number is :", end="")
+print(cmath.sinh(z))
+print("The hyperbolic cos value of complex number is :")
+print(cmath.cosh(z))
+print("The hyperbolic tan value of complex number is :")
+print(cmath.tanh(z))
+
+print(" ")
+
+#					inverse hyperbolic trignomertic complex numbers
 
 
+import cmath
+x = 1.0
+y = 1.0
 
-
-
-
-
-
-
-
-
+z= complex(x,y)
+print("The invers hyperbolid sin value of complex number is :", end="")
+print(cmath.asinh(z))
+print("The inverse hyperbolic cos value of complex number is :")
+print(cmath.acosh(z))
+print("The inverse hyperbolic tan value of complex number is :")
+print(cmath.atanh(z))
 
 
 
