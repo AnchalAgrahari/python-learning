@@ -1,0 +1,86 @@
+
+#str() and complex(real,imaginary)			"convert real number into complex and convert datatype into string"
+
+print("Complex number:",complex(1,3))
+
+srt= str(1234)
+print(srt[0:4])
+
+
+
+#increment{x+} and decrement(x-)					//do not use x++ or x--
+
+x =3
+x+=2
+print(x)
+x-=1
+print(x)
+
+print(" ")
+
+#division "/","//"					"/":give float vale as well and "//": give only integer
+
+print(25.6/6)							#output: 4.2666666...
+print(25.6//6)							#output: 4.0
+print(-25.6/6)							#output: -4.2666...
+
+
+# add(), sub(), mul()
+
+#////must import operator
+
+import operator
+print(operator.add(5,7))			
+print(operator.sub(5,7))
+print(operator.mul(5,7))
+
+print(" ")
+
+#truediv(a,b)			:returns the flooting of argument  [a/b]
+#floordiv(a,b)			:return the floor of divivsion of two argument [a//b]
+#pow(a,b)				:power [a**b]
+#mod(a,b)				:modulus [a%b]
+
+print(" ")
+
+
+
+#and_(), 					:returns 1 if both are one
+#or_(), 					:returns 1 if at least one bit is 1
+#xor()						:return 1 if both bits are different
+
+import operator
+
+a =1
+b=0
+print('a=1')
+print('b=2')
+
+#using and_() to show ythe bitwise and operators
+print("the bitwise and of a and b is :",operator.and_(a,b))
+print()
+
+
+#using or_() to show ythe bitwise and operators
+print("the bitwise or of a and b is :",operator.or_(a,b))
+print()
+
+
+#using xor_() to show ythe bitwise and operators
+print("the bitwise xor of a and b is :",operator.xor(a,b))
+print()
+
+# to find hcf value
+								#hcgnive()
+
+def hcfnaive(a,b):
+	if(b==0):
+		return a
+	else: return hcfnaive(b,a%b)
+
+a=60
+b=48
+
+#print 12
+print(" The gcd of 60 and 48 is :", end=" ")
+print(hcfnaive(60,48))
