@@ -1,12 +1,4 @@
 
-#str() and complex(real,imaginary)			"convert real number into complex and convert datatype into string"
-
-print("Complex number:",complex(1,3))
-
-srt= str(1234)
-print(srt[0:4])
-
-
 
 #increment{x+} and decrement(x-)					//do not use x++ or x--
 
@@ -70,7 +62,15 @@ print()
 print("the bitwise xor of a and b is :",operator.xor(a,b))
 print()
 
+
+
+
+#############    			DEF COMMAND()
+
+
 # to find hcf value
+#method to compute gcd (recursion) :
+
 								#hcgnive()
 
 def hcfnaive(a,b):
@@ -81,6 +81,169 @@ def hcfnaive(a,b):
 a=60
 b=48
 
-#print 12
+
 print(" The gcd of 60 and 48 is :", end=" ")
-print(hcfnaive(60,48))
+print(hcfnaive(a,b))
+
+print("")
+
+def computeGCD(x,y):
+	if x> y:
+		small = y
+	else : small = x
+	for i in range(1, small+1):
+		if ((x % i == 0 ) and (y % i == 0)):
+			gcd = i 
+	return gcd
+
+
+a =45
+b = 15
+
+print("The gcd of 45 and 15 is : ", end =" ")
+print(computeGCD(a,b))
+
+print(" ")
+
+
+# second type to calculate hcf:
+
+import math 
+asd = math.gcd(45, 15)
+print("The gcd of 45 and 15 is : ", end =" ")
+print(asd )
+
+print()
+
+#metod to compute gcd ( EUCLIDEAN ALGO):
+
+def computeGCD(x,y):
+
+	while(y):
+		x,y= y, x%y
+	return x
+
+a =45
+B = 90
+
+print("the gcd of 45 and 90 is :", end=" ")
+print(computeGCD(45,90))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
