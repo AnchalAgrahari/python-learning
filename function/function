@@ -279,34 +279,52 @@ print("the bitwise xor of a and b is :",operator.xor(a,b))
 print()
 
 
+print(" ")
+
+
+#				time() and gmtime(), asctime(), ctime()
+ 
+import time
+#display time since epoch
+print("Second elapsed since the epoch are :")
+print(time.time())
+
+print(" ")
+
+
+#return the time attrribute structure
+print("Time calculated acc. to give second is :")
+print(time.gmtime())
+
+print(" ")
+
+ti= time.gmtime()
+
+#dispaly the time acc. to time mentioned
+print(" Time claculated using asctime() is :")
+print(time.asctime(ti))
+
+print(" ")
+
+#displays the string using second
+print(" Time calculated using ctime() is :")
+print(time.ctime())
+
+print(" ")
 
 
 
+# 				sleep function
 
+import time
 
+print(time.ctime())
 
+#using sleep( ) to hault execution
+time.sleep(20)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#usingctime to shoe presen time :
+print(time. ctime())
 
 
 
