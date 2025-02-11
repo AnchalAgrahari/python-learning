@@ -1,5 +1,4 @@
 
-from pickle import TRUE
 
 
 print ("hellp world")
@@ -21,7 +20,7 @@ print (B.rjust(20))
 print (B.ljust(20, '-'))
 
 #isalpha() " shows output only string is only alphabets eles shows false"
-#isalnum() " shows output when the string is characters , numbers or alphabets eles shosws fales"
+#issum() " shows output when the string is characters , numbers or alphabets eles shosws fales"
 #isspace()  "return true if all the characters sre space"
 
 qwe = "abc"
@@ -56,7 +55,7 @@ print("The first occurence of 'it' at : ")
 print(str.find ("it"))
 
 print("The last occurence of 'it' at : ")
-print(str.rfind ("it",0,len(str)))					#we can write in both the manner
+print(str.rfind ("it",0,len(str)))				#we can write in both the manner	
 
 print(len(str))
 
