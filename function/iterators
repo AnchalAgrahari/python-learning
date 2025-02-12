@@ -142,9 +142,13 @@ print(" ")
 print("All the cmbination with replacement in sorted order : ")
 print(list(itertools.combinations_with_replacement('asd',3)))
 
+print(list(itertools.repeat(5,10)))
 
+#repeats the value(5) i'th(10) times
 
+#iteratools.count(5,2)
 
+#iteratools.cycle(5,2)
 
 
 
