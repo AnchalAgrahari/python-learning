@@ -79,7 +79,7 @@ print(l)						#{this is the output :: ['hii', 'hello'] }
 
 s="hii , hello"					#"split the string into list with comma "
 l=s.split(',')
-print(l)						#{this is the output :: ['hii', 'hello'] }	
+print(l)						#{this is the output :: ['hii ', ' hello'] }	
 
 
 

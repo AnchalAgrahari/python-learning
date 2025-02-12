@@ -20,11 +20,11 @@ elif 67 not in l:
  
 l=[1,2,3,45,7,8,9,34,56,77,8,90]
 print("the length of list is : ", len(l))
-print("the maximum occurence of element : ",max(l))
-print("the minimum occurence of element : ",min(l))
+print("the maximum occurrence of element : ",max(l))
+print("the minimum occurrence of element : ",min(l))
 
 
-#use of "+"and "*"   "  '+' add the lists and '*' print list numbers of time "
+#use of "+"and "*"   :'+' add the lists and '*' print list numbers of time "
 
 l1=[1,2,3]
 l2=[4,5,6]
@@ -66,7 +66,7 @@ print("after removing of the extra element :",l1)
 
 
 #sort()			"it reassemble the list in it's order"
-#revers1()
+#reverse()
 
 l1 = [1,2,3,4,5,6,23,56,98,7,8,9]
 l1.sort()
