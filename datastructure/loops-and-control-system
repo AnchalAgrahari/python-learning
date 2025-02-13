@@ -69,7 +69,7 @@ for letter in l:
 	print (letter)
 
 
-###############################################################################
+################################
 
 #split statement:				"split the string into list with space "
 
@@ -81,22 +81,48 @@ s="hii , hello"					#"split the string into list with comma "
 l=s.split(',')
 print(l)						#{this is the output :: ['hii ', ' hello'] }	
 
+print()
+
+print()
+
+print()
+print()
+
+print()
+
+
+##############################################################################################################################################################
+
+
+# 								LOOPING TECHNIQUES
 
 
 
+#  enumerate() function:					print the list with index
+ 
+for key, values in enumerate(['the','big','bang','theory']):
+	print(key, values)
+
+print()
 
 
+##					zip()
+
+question = ['Name ','Color ','Shape ']
+answer  =['Apple','Red','Circle']			
+
+#using zip() to combine two containers
+
+for question, answer in zip(question, answer):
+	print('What is your {0}: I am {1}.'.format(question, answer))
+
+print()
 
 
+#				iteritems() and items()
 
 
-
-
-
-
-
-
-
+import operator
 
 
 
