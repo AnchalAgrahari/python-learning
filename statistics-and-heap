@@ -1,0 +1,91 @@
+#										STATISTICS:
+
+#mean() , mode(), and median() [median_high() and median_low() and median_grouped()]
+
+import statistics
+
+ls = [3,4,5,5,4,3,4]
+
+print("The average of list values is :", end="")
+print(statistics.mean(ls))
+
+print("The maximum occuring element is: ", end="")
+print(statistics.mode(ls))
+
+print("The median of list element is: ", end="")
+print(statistics.median(ls))
+
+print("The higher median of list element is: ", end="")
+print(statistics.median_high(ls))
+
+print("The lower median of list element is: ", end="")
+print(statistics.median_low(ls))
+
+print("The 50th percentile of data is: ", end="")
+print(statistics.median_grouped(ls))
+print(" ")
+
+#						variance() and pvariance()
+
+import statistics
+
+ld= [1.4,2.6,3.1,4.8]
+
+#using of variance() to calculate variance of data
+print("The variance of data is :" , statistics.variance(ld))
+
+
+#using pvariance to calculate population variance of data
+print("The population variance of data is :",end="")
+print(statistics.pvariance(ld))
+
+print(" ")
+ 
+#Analyzing a sample from a larger dataset	variance()
+#Analyzing the entire dataset (population)	pvariance()
+#Machine learning feature scaling	variance()
+#Statistical research on full datasets	pvariance()
+
+
+
+#						stdev() and pstdev()
+
+import statistics
+
+li= [1.2,3.4,5.6,7.8]
+
+print("The standard deviation of data is :", statistics.stdev(li))
+
+
+print("The population standard deviation od data is :", statistics.pstdev(li))
+print(" ")
+
+
+
+
+
+
+
+#										HEAP() FUNCTION
+
+#					heapity(), heappush(), heappop()
+
+#importing "heapq" to implement heap queue
+
+import heapq
+
+ls=[2,4,6,8,9,5,2]
+
+#using heapify to convert list into heap
+heapq.heapify(ls)
+
+print("The created heap is :", list(ls))
+
+#using heappush() to push the element into the list 
+heapq.heappush(ls,34)
+
+print("The modified heap after push is :", list(ls))
+
+#using heappop() to pop the smallest element
+print("The popped and smallest element is :", heapq.heappop(ls))
+
