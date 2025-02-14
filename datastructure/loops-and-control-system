@@ -148,7 +148,7 @@ for i in sorted(set(lk)):
 
 print("")
 
-print("The list in reversed order Is : ")
+print("The list in reversed order Is : ", end="")
 for i in reversed(lk):
 	print(i)
 
