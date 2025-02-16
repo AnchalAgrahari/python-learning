@@ -3,63 +3,80 @@
 #		append(), insert(), pop(), remove(), index(), reverse()
 
 import array
-asd =array.array('i',[1,2,3])
+asd =array.array('i',[1,2,3,1,9])
 
 print("The created array is :", end="")
-for i in range(0,3):
+for i in range(0,5):
+	print(asd[i],end="")
+
+print(" ")
+#								append()
+asd.append(5)
+
+print("The append array is :", end="")
+for i in range(0,6):
+	print(asd[i],end="")
+print(" ") 
+#								insert()
+asd.insert(3,6)
+
+print("The array after the insertation is :", end="")
+for i in range(0,7):
+	print(asd[i],end="")
+print(" ")
+
+
+#								pop()
+
+#print the element that is going to be delete of the given position
+
+print("The popped element is :", asd.pop(4))
+
+#print the array after popping of the list:
+print("The array afte popped element is :",end="")
+for i in range(0,5):
 	print(asd[i],end="")
 
 print(" ")
 
-asd.append(5)
+#								remove()
 
-print("The append array is :", end="")
+#remove the first occurence of the element
+
+asd.remove(1)
+
+print("The array after removing of the element is : ", end="")
 for i in range(0,4):
 	print(asd[i],end="")
-print("") 
+print(" ")
 
-asd.insert(3,6)
+#								reverse()
 
-print("The array after the insertation is :", end="")
+asd.reverse()
+print("The reversed array list : ", end="")
 for i in range(0,5):
 	print(asd[i],end="")
-print("")
-
-#removes the element of the given position
-
-print("The popped element is :", asd.pop(4))
+print(" ")
 
 
+#				typecode, itemsize, buffer_info()
+
+import array
+
+arr=array.array(i,[1,2,3,4,4,4,3,2])
+
+print("The datatype of array is :",end="")
+print(arr.typecode)
 
 
-
-
-
-
-
-
-
-
+print("The itemsize of array is :",end="")
+print(arr.itemsize)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("The buffer info of array is :",end="")
+info= arr.buffer_info()
+print(info)
 
 
 
