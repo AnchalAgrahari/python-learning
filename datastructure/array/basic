@@ -78,7 +78,7 @@ print("The buffer info of array is :",end="")
 info= arr.buffer_info()
 print(info)
 
-print("")
+print(" ")
 
 
 
