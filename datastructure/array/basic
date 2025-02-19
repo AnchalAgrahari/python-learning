@@ -1,6 +1,7 @@
 
 					#				ARRAY				#
-#		append(), insert(), pop(), remove(), index(), reverse()
+#		append(), insert(), pop(), remove(), index(), reverse(), count(), extend()
+
 
 import array
 asd =array.array('i',[1,2,3,1,9])
@@ -9,21 +10,21 @@ print("The created array is :", end="")
 for i in range(0,5):
 	print(asd[i],end="")
 
-print(" ")
+print("\n")
 #								append()
 asd.append(5)
 
 print("The append array is :", end="")
 for i in range(0,6):
 	print(asd[i],end="")
-print(" ") 
+print("\n") 
 #								insert()
 asd.insert(3,6)
 
 print("The array after the insertation is :", end="")
 for i in range(0,7):
 	print(asd[i],end="")
-print(" ")
+print("\n")
 
 
 #								pop()
@@ -37,7 +38,7 @@ print("The array afte popped element is :",end="")
 for i in range(0,5):
 	print(asd[i],end="")
 
-print(" ")
+print("\n")
 
 #								remove()
 
@@ -48,7 +49,8 @@ asd.remove(1)
 print("The array after removing of the element is : ", end="")
 for i in range(0,4):
 	print(asd[i],end="")
-print(" ")
+
+print("\n")
 
 #								reverse()
 
@@ -56,14 +58,30 @@ asd.reverse()
 print("The reversed array list : ", end="")
 for i in range(0,5):
 	print(asd[i],end="")
-print(" ")
+print("\n")
+
+#								extend()
+axd = array.array('i',[3,4,5,6,6,6])
+
+asd.extend(axd)
+print("The modified array is :",end="")
+for i in range(0,10):
+	print(asd[i],end="")
+print("\n")
+
+
+
+#							count()
+print("The occurence of 6 in the array is :", end="")
+print(asd.count(6))
+print("\n")
 
 
 #				typecode, itemsize, buffer_info()
 
 import array
 
-arr=array.array(i,[1,2,3,4,4,4,3,2])
+arr=array.array('i',[1,2,3,4,4,4,3,2])
 
 print("The datatype of array is :",end="")
 print(arr.typecode)
@@ -78,14 +96,34 @@ print("The buffer info of array is :",end="")
 info= arr.buffer_info()
 print(info)
 
-print(" ")
+print("\n")
+
+#						fromlist() and tolist()		
+
+
+#fromlist() will print thesecond list repetedly upto the given range
+import array
+
+asd= array.array('i',[1,2,3,4,5,3,4,5])
+
+lsds= [3,4,5]
+
+asd.fromlist(lsds)
+print("THe modified array is: ", end="")
+for i in range(0,9):
+	print(asd[i],end="")
+
+print("\n")
 
 
 
-
-
-
-
+ldf= asd.tolist()
+print("Original Array: ",end="")
+for i in range(0,len(ldf)):
+	print(ldf[i],end="")
+print("\n")
+print("Converted Array into list :", ldf)
+print("\n")
 
 
 
