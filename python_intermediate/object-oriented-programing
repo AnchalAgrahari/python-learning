@@ -1,0 +1,400 @@
+#A simple example class
+
+class test:				#class name
+
+
+#							fun() method
+
+	#simple method
+	def fun(self):				#fun: the name of the method, self: refer to the intence (object) of the class...........self allows to the instance's attributes and other methods.
+		print("Hello")
+
+#derive code
+obj = test()					#object created, obj: A veeriable that holds the instance of the class.
+obj.fun()						#obj: the object that we just created,   .fun(): class the mothod of the obj object
+print()
+
+
+#					init() method
+
+class person:
+	
+	#inti method or construction;
+
+	def __init__(self, name):					#self: current instance, name: a parameter that tske the value when object is created.
+		self.name = name						#this assign the value of name to an instance variable(self.name)
+
+	#sample mwtohd
+
+	def say_hi(self):							#defines the metohd inside the class.
+		print('Hello, my name is ', self.name)
+
+p= person('Anchal')
+p.say_hi()
+
+print()
+
+
+#							class variables
+
+class students:
+
+	stream = 'cse'
+
+	def __init__(self, roll_no):
+
+		self.roll_no = roll_no
+
+
+a = students(11)
+b = students(12)
+
+print("I'm a student of stream: ",a.stream)
+print("of roll no:",a.roll_no)
+print(b.stream)
+print(b.roll_no)
+
+print()
+
+#										()
+
+class Person:
+ 
+ #	constructor
+	def __init__(self,name):
+ 		self.name = name
+ 	#to get name
+	def get_name(self):
+ 		return self.name
+
+ #to check if this person is employee
+
+	def is_employee(self):
+ 		return False
+
+# inherited or sub class (note person in bracket)
+class Employee(Person):
+
+	def is_employee(self):
+		return 	True
+
+#driver code
+zsd = Person("Anchal")
+print(zsd.get_name(), zsd.is_employee())
+
+zsd = Employee("Shubham")
+print(zsd.get_name(), zsd.is_employee())
+
+print()
+
+## 																								
+
+class base1:
+	def __init__(self):
+		self.str1 = "Hyee"
+		
+
+class base2:
+	def __init__(self):
+		self.str2 = "Hii"
+	
+class derived(base1, base2):				#multiple inheeritence
+	def __init__(self):
+		#calling the constructor of base1 and base2 classes
+		base1.__init__(self)
+		base2.__init__(self)
+		
+
+	def printstrs(self):
+		print(self.str1, self.str2)
+
+obj = derived()
+obj.printstrs()
+
+
+####
+
+class Base(object):
+
+	#constructor now accept 'x'
+	def __init__(self, x):
+		self.x = x+100					#using x correctly
+
+class Derived(Base):
+	#construbctor with 'x' and 'y'
+	def __init__(self, x, y):
+		super().__init__(x)			#correct super() call
+		self.y = y 
+	
+	def printXY(self):
+
+		#base x isn't work here becaues super is used in construction
+		print(self.x, self.y)
+
+
+#deriver code
+d = Derived(10, 20)
+d.printXY()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
