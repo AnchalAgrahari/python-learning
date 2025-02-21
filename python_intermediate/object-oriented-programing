@@ -31,6 +31,8 @@ class person:
 
 p= person('Anchal')
 p.say_hi()
+p= person("Deepti")
+p.say_hi()
 
 print()
 
