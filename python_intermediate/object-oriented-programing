@@ -146,7 +146,7 @@ class School:
 	def __init__(self, name, sub1, sub2, sub3):
 
 	    self.name = name
-	    self.sub1 = sub1
+		self.sub1 = sub1
 	    self.sub2 = sub2
 	    self.sub3 = sub3
 
@@ -158,7 +158,67 @@ print("My physic score is : ", Student.sub3)
 
 
 
+####   Write a Python program to create a Student class with attributes name and age.
 
+
+class Student:
+      def __init__(self, name, age):
+            self.name = name
+            self.age = age
+
+
+q = Student("Anchal", 20)
+w = Student("Ash", 23)
+print("My name is :",q.name, " and I'm", q.age, "year old")
+print(w.name, w.age)
+
+####Create a BankAccount class with a private variable balance.
+#Add a method to deposit and withdraw money while keeping the balance secure.
+
+class BankAccount:
+
+      def __init__(self, deposit, withdraw):
+
+            self.deposit = deposit 
+            self.withdraw = withdraw
+
+      def add__deposit(self, amount):
+
+            self.deposit += amount
+
+      def make_withdraw(self, amount):
+            if amount > self.deposit:
+                  print("Insufficient Bbalance")
+            else:
+                  self.deposit -= amount
+
+account = BankAccount(8000, 00)
+
+account.add__deposit(500)
+
+print(account.deposit)
+
+
+print("The amount in the account is :", account.deposit)
+print("I want to withdraw 500 from account :",account.make_withdraw(500))
+print("Now the amount in the account is  :",account.deposit)
+
+
+
+######
+
+print()
+class Vehicle:
+      def __init__(self, brand, speed, fule_type):
+            self.brand = brand
+            self.speed = speed
+            self.fuel_type = fule_type
+
+      def car_info(self):
+            print(f"The [{self.brand}] has a speed limit of [{self.speed}] km/h and uses [{self.fuel_type}].")  #here we use 'f' after print so that we wr=ere able to use '{}' 
+
+car1 = Vehicle('Mercdes', 1980, 'gasoline')
+car1.car_info()
 
 
 
