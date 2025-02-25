@@ -88,4 +88,30 @@ print("The modified heap after push is :", list(ls))
 
 #using heappop() to pop the smallest element
 print("The popped and smallest element is :", heapq.heappop(ls))
+print("")
 
+#					heappushpop() and  heapreplace()
+
+import heapq
+
+lis1= [2,4,7,8]
+lis2= [2,4,7,8]
+heapq.heapify(lis1)
+heapq.heapify(lis2)
+
+#using heappushpop() to push and pop items simultaneously 
+print("The popped item using heappushpop is :", heapq.heappushpop(lis1,2))
+
+#using heapreplace() to push and pop item simultaneously
+print("The popped item using heapreplace() is :", heapq.heapreplace(lis2,1))
+
+#				nlargest() and nsmallest()
+
+import heapq
+
+lis=[2,3,4,5,6,12,3,1,58,73,1,1,0]
+heapq.heapify(lis)
+
+print("The 3 largest number in list are: ", heapq.nlargest(3,lis))
+
+print("The 3 smallest number in list are: ", heapq.nsmallest(3,lis))
