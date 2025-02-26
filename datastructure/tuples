@@ -62,6 +62,29 @@ print (temp)
 
 
 
+#### 					named tuple
+
+import collection
+
+#deleration of named tuple()
+Std = collection.namerdtuple('Std',[Name,Age,DOB])
+
+#Adding calues
+S = Std('Anchal','20','12/09/2004')
+
+#Access using index
+print("The student using index is:", end="")
+print(S[1])
+
+#Access using name
+print("The student name using ketname is:", end="")
+print(S.name)
+
+#Access using getattr()
+print("The student DOB using getattr is:", end="")
+print(gatattr(S.'DOB'))
+
+
 
 
 
