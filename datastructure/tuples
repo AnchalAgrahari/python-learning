@@ -64,6 +64,9 @@ print (temp)
 
 #### 					named tuple
 
+
+#							getattr()
+
 import collection
 
 #deleration of named tuple()
@@ -73,7 +76,7 @@ Std = collection.namerdtuple('Std',[Name,Age,DOB])
 S = Std('Anchal','20','12/09/2004')
 
 #Access using index
-print("The student using index is:", end="")
+print("The student age using index is:", end="")
 print(S[1])
 
 #Access using name
@@ -86,6 +89,7 @@ print(gatattr(S.'DOB'))
 
 
 
+#							
 
 
 
