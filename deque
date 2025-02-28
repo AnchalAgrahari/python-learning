@@ -1,0 +1,12 @@
+import collections
+
+de = collections.deque([1,2,3])						#instializing deque
+print()
+print(de)
+de.append(4)
+print()
+print("modified deque :",de)
+print()
+de.appendleft(0)
+print("2nd modified deque :", de)
+print()
