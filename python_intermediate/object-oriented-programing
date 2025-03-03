@@ -205,7 +205,7 @@ print("Now the amount in the account is  :",account.deposit)
 
 
 
-######
+##### #my code and actual code is below
 
 print()
 class Vehicle:
@@ -222,10 +222,53 @@ car1.car_info()
 
 
 
+#####Create a Vehicle class with attributes brand and speed.
 
 
+class Vehicle:
+    def __init__(self, brand, speed, fuel_type):
+        self.brand = brand
+        self.speed = speed
+        self.fuel_type = fuel_type  
+
+    def car_info(self):
+        print(f"The \033[1;34m{self.brand}\033[0m has a speed limit of \033[1;31m{self.speed} km/h\033[0m and uses \033[1;32m{self.fuel_type}\033[0m.")
+
+# Creating an instance
+car1 = Vehicle('Mercedes', 1980, 'Gasoline')
+car1.car_info()
+
+#Brand is in Blue (\033[1;34m)
+#Speed is in Red (\033[1;31m)
+#Fuel_Type is in Green (\033[1;32m) 
 
 
+#####Create a Vehicle class with attributes brand and speed.
+##Create a Car class that inherits from Vehicle and adds an attribute fuel_type.
+
+class Vechile :
+      def __init__(self, brand, speed):
+            self.brand = brand
+            self.speed = speed
+
+      def Vechile_info(self):
+            print(f"the {self.brand} with speed limit {self.speed} km/h ")
+
+
+class Car(Vechile):
+      def __init__(self, brand, speed, fuel_type):
+            super().__init__(brand, speed)
+            self.fuel_type = fuel_type
+
+      def car_info(self):
+            print(f"The \033[1;31m{self.brand}\033[0m with speed limit \033[1;32m{self.speed}\033[0m km/h of fuel type \033[1;33m{self.fuel_type}\033[0m.")
+
+
+car1 = Car('Bentely', 208, 'Petrol')
+car1.car_info()
+print()
+car2 = Car('BMW', 230, 'gasoline')
+car2.car_info()
 
 
 
