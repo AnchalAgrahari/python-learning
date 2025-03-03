@@ -1,0 +1,17 @@
+# python program to handle simple runtime error:
+
+a= [1,2,3,4,5]
+
+try:
+      print("Second element =", (a[1]))
+
+
+      # throws error since there are onlt 4 element in array
+      print("Fifth element = %d", (a[5]))
+
+except IndexError:
+      print("An error occured")
+      
+
+
+
