@@ -2,16 +2,36 @@
 
 a= [1,2,3,4,5]
 
+
+print()
 try:
       print("Second element =", (a[1]))
 
 
-      # throws error since there are onlt 4 element in array
+      # throws error since there are onlt 5 element in array
       print("Fifth element = %d", (a[5]))
 
 except IndexError:
       print("An error occured")
+
+
+print()
       
+## program to handle multiple error with one except statement
+
+try :
+      a = 3
+      if a < 4:
+
+            #throw ZeroDivisionError for a=3
+            b = a/(a-3)
+      #throws NameError if a >=4
+      print("Value of b =", b)
+
+#the braces() are necessary here for multiple exception
+
+except(ZeroDivisionError, NameError) :
+      print("Error occurred and handled")  
 
 
 
