@@ -1,4 +1,6 @@
 # python program to handle simple runtime error:
+#                 try , except function
+
 
 a= [1,2,3,4,5]
 
@@ -33,5 +35,25 @@ try :
 except(ZeroDivisionError, NameError) :
       print("Error occurred and handled")  
 
+print()
+
+def axc(a, b):
+      try:
+            c = ((a+b)/(a-b))
+      except ZeroDivisionError:
+            print("a/b result in 0")
+      else:
+            print(c)
 
 
+axc(3,3)
+axc(3.0,6.0)
+
+print()
+
+
+try:
+    raise NameError("Hi there") 
+except NameError:
+    print("An exception")
+    raise  #to determine whether the exception was raised or not
