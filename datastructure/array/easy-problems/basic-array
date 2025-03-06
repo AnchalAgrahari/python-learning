@@ -13,13 +13,6 @@ def main():
 
 
         #to insert/adding element in array 
-             
-	     
-			
-                
-
-                
-        
                
 
 
@@ -32,18 +25,6 @@ def reverse_and_print_array():
 	for i in a :
                 					#reverse the array
 	     print(i, end=" ")
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
