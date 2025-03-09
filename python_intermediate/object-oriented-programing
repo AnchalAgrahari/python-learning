@@ -1,4 +1,6 @@
-#A simple example class
+######			A simple example class
+
+
 
 class test:				#class name
 
@@ -37,7 +39,9 @@ p.say_hi()
 print()
 
 
-#							class variables
+#					class variables
+#			creating object
+
 
 class students:
 
@@ -47,6 +51,7 @@ class students:
 
 		self.roll_no = roll_no
 
+#creating an object of student class
 
 a = students(11)
 b = students(12)
@@ -58,7 +63,7 @@ print(b.roll_no)
 
 print()
 
-#										()
+#						()
 
 class Person:
  
@@ -275,7 +280,7 @@ car2.car_info()
 
 
 
-
+######   				
 
 
 
