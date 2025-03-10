@@ -248,8 +248,10 @@ car1.car_info()
 #Fuel_Type is in Green (\033[1;32m) 
 
 
+
 #####Create a Vehicle class with attributes brand and speed.
 ##Create a Car class that inherits from Vehicle and adds an attribute fuel_type.
+
 
 class Vechile :
       def __init__(self, brand, speed):
@@ -280,7 +282,21 @@ car2.car_info()
 
 
 
-######   				
+
+#				Inheritence	
+
+#single inheritance : a child class inhertie from a single parent class
+#
+#multiple inheritance : a chille class inherite from more than one parent class
+#
+#multilevel inheritance : a chlid class inherete from a parent class, which in turn inherite from another class
+#
+#hierarchical inheritance : multiple child classes inherite from single parent class
+#
+#hybrid inheritance : a combination of two or more type of inheritance
+#
+
+
 
 
 
