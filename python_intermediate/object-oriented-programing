@@ -297,7 +297,9 @@ car2.car_info()
 #
 
 
-
+class engeneering:
+	def __init__(self,type):
+		self.type = 
 
 
 
