@@ -1,0 +1,29 @@
+#Given an array of positive integers arr[] of size n, the task is to find second largest distinct element in the array.
+
+#Note: If the second largest element does not exist, return -1.
+
+def getsecondlargest(arr):
+	n = len(arr)			#store the element in arr
+
+	arr.sort()				#will sort the array in acending order
+
+	for i in range (n - 2,-1,-1): #n - 2 → Starts from the second last index (n-1 is the last index).
+								  #-1 → Stops at index 0 (inclusive).
+								  #-1 → Moves backwards in steps of -1.
+		if arr[i !=arr[n - 1]]:
+
+			return arr[i]
+
+	return -1 	#if no secont largest element found return -1
+print()
+
+if __name__ == "__main__":
+	arr= list(map(int, input("Enter numbers seprated by space:").split()))
+	arr.sort()
+	print("your array:", arr)
+
+	if len(arr) < 2:
+		print("Error: Array must have at least two distinct element.")
+	else:
+		print("Second Largest Element : ", getsecondlargest(arr))
+	
