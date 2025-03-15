@@ -55,10 +55,6 @@ b = a.array('i',[1.2,4.5,5.6,7.8,5.9])
 print(b[0])
 print(b[4])
 
-# removing and adding element
-
-import array
-a = arr.array('i',[1,3,4,5,6])
 
 
 ##                      Slicing of an Array
@@ -78,12 +74,45 @@ Sliced_array = a[:]
 print(Sliced_array)
 
 
+import array as arr
+k = [1,2,3,4,5,6]
 
-impoer array as arr
- k = [1,2,3,4,5,6]
+a=  arr.array('i',k)
 
-a = array.arr('i'l)
- 
+print(a)
+
+#slicing of an array (to print from a specific range we use slice operation )
+slice_array = a[0:4]
+print(slice_array)
+slice_array = a[3:5]
+print(slice_array)
+
+#searching the element (normally provie the index operation with element that we need)
+print(a.index(2))           #in array a element 2 has at index 1
+index = a.index(2)
+print(f"element 2 found at index at :{index}")
+
+
+# adding element
+a.append(7)
+a.append(8)
+a.append(9)
+print(a)
+
+a.extend([10,11,12,13,14,15])
+print(a)
+
+#counting element in array
+count = a.count(2)    #counting perticular element
+print("occurence of 2 in array" ,count)
+
+print("element in array:", len(a))  #counting length of array
+
+#   reversing the element
+
+a.reverse()
+print(a)
+
 
 
                     
