@@ -296,14 +296,21 @@ car2.car_info()
 #hybrid inheritance : a combination of two or more type of inheritance
 #
 
+## incomplete
+
 
 class engeneering:
-	def __init__(self,type):
-		self.type = 
 
+      print("")
+      def __init__(self,type):
+            self.type = type
 
+      def display_type(self):
+            print(f"engeneering type: {self.type}")
 
-
+class software_engeneering(engeneering):  #single inheritance
+      def opportunity_avaliable(self):
+            print("Frontend Engeneering")
 
 
 
