@@ -14,7 +14,7 @@ def getsecondlargest(arr):
 
 			return arr[i]
 
-	return -1 	#if no secont largest element found return -1
+	return -1 	#if no second largest element found return -1
 print()
 
 if __name__ == "__main__":
@@ -27,3 +27,23 @@ if __name__ == "__main__":
 	else:
 		print("Second Largest Element : ", getsecondlargest(arr))
 	
+
+
+
+#printting the middle term of the array given by the user .split
+
+def middle_term_of_the_array(arr):
+    n = len(arr)
+    arr.sort()
+
+    return arr[n//2]
+print ()
+if __name__ == "__main__":
+    
+    arr = list(map(int, input("Enter the element with spacing:").split() ))
+
+    if len(arr) <2:
+        print("ERROR! Array must contain at least 2 element")
+    else:
+         print("The middle term of the Array is :",middle_term_of_the_array(arr))
+ 
