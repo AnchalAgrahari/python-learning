@@ -77,7 +77,15 @@ if __name__ == '__main__':
 
 
 
-#shfhtysh
 
+
+
+import array
+arr = array.array('i', [1, 2, 3, 4, 5])
+
+arr.reverse()
+print("Reversed array:", *arr)
+
+       
 
 
