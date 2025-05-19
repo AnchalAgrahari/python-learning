@@ -6,6 +6,12 @@ count = 1
 while(count < 3):
 	print("Hii")
 	count = count +1
+"""
+Iteration	count Value	Condition count < 3	Prints	count After Increment
+1		1		True			Hii	2
+2		2		True			Hii	3
+3		3		False (loop ends)	—	—
+"""
 
 
 
