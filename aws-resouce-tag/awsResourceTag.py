@@ -1,18 +1,22 @@
 import json
 import boto3
-s3_obj = boto3.client('s3')
+try:
 
-s3_clientobj = s3_obj.get_object(Bucket = 'read-json-tagger-file-1062025', Key = 'tag.json')
-s3_clientdata = s3_clientobj['Body'].read().decode()
+    s3_obj = boto3.client('s3')
 
-print("Printing s3_clientdata")
-print(s3_clientdata)
-print(type(s3_clientdata))
+    s3_clientobj = s3_obj.get_object(Bucket = 'read-json-tagger-file-1062025', Key = 'tag.json')
+    s3_clientdata = s3_clientobj['Body'].read().decode()
 
-s3clientlist = json.loads(s3_clientdata)
-print("json loaded data")
-print(s3clientlist)
-print(type(s3clientlist))
+    print("Printing s3_clientdata")
+    print(s3_clientdata)
+    print(type(s3_clientdata))
+
+    s3clientlist = json.loads(s3_clientdata)
+    print("json loaded data")
+    print(s3clientlist)
+    print(type(s3clientlist))
+except Exception as e:
+    print("An error occured", e)
 
 def read_file(file_name):
     try:
@@ -23,7 +27,6 @@ def read_file(file_name):
         print("AN exception has occured", e)
 
     
-
 
 if __name__ == '__main__':
     try:
