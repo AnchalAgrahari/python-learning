@@ -59,7 +59,10 @@ if __name__ == '__main__':
         file_name = "tag.json"
         #file reading
         read_file(file_name)
-       
+        ##
+        event = {}
+        context = None
+        lambda_handler(event, context)
        
     except Exception as e:
         print("AN exception has occured", e)
