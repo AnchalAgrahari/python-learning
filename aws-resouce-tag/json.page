@@ -1,0 +1,17 @@
+import json
+
+def creat_tag():
+    data = [
+        { "Key":"Owner", "Value" : " Anchal"}
+    ]
+
+    try:
+        with open ("tag2.json", "w") as f:
+            json.dump(data, f, indent=4)
+        print("JSON file created successufully")
+    except Exception as e:
+        print("An exception has occured",e)
+
+
+if __name__ == "__main__":
+    creat_tag()
