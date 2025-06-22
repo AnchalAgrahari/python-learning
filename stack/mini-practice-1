@@ -1,0 +1,39 @@
+# Reverse a String using Stack (no built-in reverse)
+'''stack = []
+stack.append("h")
+stack.append("e")
+stack.append("l")
+stack.append("l")
+stack.append("o")
+print(stack)
+
+reversed_stack = ""
+while stack:
+    reversed_stack += stack.pop()
+print(reversed_stack)'''
+### first written code with 91.6 % accuracy just beacuse non-reusable (absent of function) and manually pushing of values
+
+def reverse_string(text):   # defined function name
+    stack = []                 # empty list
+    for char in text:           #looping through each character 
+        stack.append( char )    # pushing it into stack
+    
+    reversed_text = ""             #creating empty string to store the reverse version
+    while stack:                    #using the while loop until the stack will empty
+        reversed_text += stack.pop() #stack.pop() removes the charater by LIFO and += adds each popped character into reverse_text string
+
+    return reversed_text                #return the final string
+
+print(reverse_string("cookie"))
+
+'''
+pop 'e' → reversed_text = "e"
+pop 'i' → "ei"
+pop 'k' → "eik"
+pop 'o' → "eiko"
+pop 'o' → "eikoo"
+pop 'c' → "eikooc" 
+'''
+
+
+
