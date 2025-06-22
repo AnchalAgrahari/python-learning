@@ -1,12 +1,15 @@
 import json
 import boto3
 
-#reading  json file present in system
+#reading  json file present in systems3clientlist
 def read_file(file_name):
     try:
         with open(file_name ,'r') as f :
             data = json.load(f)
+        print("JSON data read")
         print(data)
+        print(type(data))
+        return data
     except Exception as e:
         print("AN exception has occured", e)
 
@@ -29,40 +32,31 @@ except Exception as e:
     print("An error occured while reading file ",e)
 
 #adding tag
-
-def add_tag(bucket_name):
+def add_tag(bucket_name, key, data):
     try:
         client = boto3.client('s3')
-        response = client.put_bucket_tagging(
-            Bucket = bucket_name , 
-            ChecksumAlgorithm = 'CRC32',
+        response = client.put_object_tagging(
+            Bucket = bucket_name,
+            Key = key,
             Tagging={
-                'TagSet':  s3clientlist[ 's3clientlist']
+                'TagSet':data
             },
-            ExpectedBucketOwner='697429983773'
+                ExpectedBucketOwner='697429983773'
         )
+        print("Tgging Successfull")
     except Exception as e:
-        print("An exception has occured during tagging",e)
-
-def lambda_handler(event, context):
-    try:
-         # s3
-        bucket_name = 'read-json-tagger-file-1062025'
-        #add tag
-        add_tag(bucket_name)
-    except Exception as e:
-        print("An exception has occured")
-
+        print("An exception has ooccurec while tagging", e)
 
 if __name__ == '__main__':
     try:
-        file_name = "tag.json"
-        #file reading
-        read_file(file_name)
-        ##
-        event = {}
-        context = None
-        lambda_handler(event, context)
+        file_name = "tag2.json"
+        
+        bucket_name = 'read-json-tagger-file-1062025'
+        key = 'tag.json'
+
+        data = read_file(file_name)
+       
+        add_tag(bucket_name, key, data)
        
     except Exception as e:
         print("AN exception has occured", e)
