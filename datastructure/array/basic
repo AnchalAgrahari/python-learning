@@ -126,11 +126,25 @@ print("Converted Array into list :", ldf)
 print("\n")
 
 
+ldf= asd.tolist()
+print("Original Array: ",end="")
+for i in range(0,len(ldf)):
+	print(ldf[i],end="")
+print("\n")
+print("Converted Array into list :", ldf)
+print("\n")
 
 
+"""
 
+Elements from beginning to a range use [:Index]
+Elements from end use [:-Index]
+Elements from specific Index till the end use [Index:]
+Elements within a range, use [Start Index:End Index]
+Print complete List, use [:].
+For Reverse list, use [::-1].
 
-
+"""
 
 
 
