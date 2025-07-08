@@ -1,62 +1,52 @@
 import json
 import boto3
 
-#reading  json file present in systems3clientlist
-def read_file(file_name):
-    try:
-        with open(file_name ,'r') as f :
-            data = json.load(f)
-        print("JSON data read")
-        print(data)
-        print(type(data))
-        return data
-    except Exception as e:
-        print("AN exception has occured", e)
-
 #reading json file present in s3 bucket
-try:
-    s3_obj = boto3.client('s3')
+def read_JSON_from_s3(bucket, key):
+    try:
+        s3_obj = boto3.client('s3')
 
-    s3_clientobj = s3_obj.get_object(Bucket = 'read-json-tagger-file-1062025', Key = 'tag.json')
-    s3_clientdata = s3_clientobj['Body'].read().decode()
+        s3_clientobj = s3_obj.get_object(Bucket = bucket, Key = key)
+        s3_clientdata = s3_clientobj['Body'].read().decode()
+        print("Printing s3_clientdata")
+        print(s3_clientdata)
+        print(type(s3_clientdata))
 
-    print("Printing s3_clientdata")
-    print(s3_clientdata)
-    print(type(s3_clientdata))
+        s3clientlist = json.loads(s3_clientdata)
+        print("json loaded data")
+        print(s3clientlist)
+        print(type(s3clientlist))
 
-    s3clientlist = json.loads(s3_clientdata)
-    print("json loaded data")
-    print(s3clientlist)
-    print(type(s3clientlist))
-except Exception as e:
-    print("An error occured while reading file ",e)
+        return s3clientlist
+    except Exception as e:
+        print("An exception has occured while reading file from s3",e)
 
 #adding tag
-def add_tag(bucket_name, key, data):
+def add_tag(bucket_name, data):
     try:
         client = boto3.client('s3')
-        response = client.put_object_tagging(
+        tag_set = [{'Key':key, 'Value': value}for key, value in data.items()]
+        response = client.put_bucket_tagging(
             Bucket = bucket_name,
-            Key = key,
             Tagging={
-                'TagSet':data
+                'TagSet': tag_set
             },
-                ExpectedBucketOwner='697429983773'
+            ExpectedBucketOwner='697429983773'
         )
-        print("Tgging Successfull")
+        print("Tagging Successful")
     except Exception as e:
-        print("An exception has ooccurec while tagging", e)
+        print("An exception has occured while tagging", e)
 
 if __name__ == '__main__':
     try:
-        file_name = "tag2.json"
         
         bucket_name = 'read-json-tagger-file-1062025'
         key = 'tag.json'
 
-        data = read_file(file_name)
+        prased_data = read_JSON_from_s3(bucket_name, key)
+        print("Let's check data", prased_data)
        
-        add_tag(bucket_name, key, data)
+        add_tag(bucket_name, prased_data)
        
     except Exception as e:
-        print("AN exception has occured", e)
+        print("An exception has occured", e) 
