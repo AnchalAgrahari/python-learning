@@ -11,6 +11,6 @@ def thefunction() :
     fun = 458
     def innerfunction():
         print(fun)
-    #innerfunction()
+    innerfunction()
                    
-#thefunction() 
+thefunction() 
