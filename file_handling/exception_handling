@@ -1,0 +1,59 @@
+# python program to handle simple runtime error:
+#                 try , except function
+
+
+a= [1,2,3,4,5]
+
+
+print()
+try:
+      print("Second element =", (a[1]))
+
+
+      # throws error since there are onlt 5 element in array
+      print("Fifth element = %d", (a[5]))
+
+except IndexError:
+      print("An error occured")
+
+
+print()
+      
+## program to handle multiple error with one except statement
+
+try :
+      a = 3
+      if a < 4:
+
+            #throw ZeroDivisionError for a=3
+            b = a/(a-3)
+      #throws NameError if a >=4
+      print("Value of b =", b)
+
+#the braces() are necessary here for multiple exception
+
+except(ZeroDivisionError, NameError) :
+      print("Error occurred and handled")  
+
+print()
+
+def axc(a, b):
+      try:
+            c = ((a+b)/(a-b))
+      except ZeroDivisionError:
+            print("a/b result in 0")
+      else:
+            print(c)
+
+
+axc(3,3)
+axc(3.0,6.0)
+
+print()
+
+
+try:
+    raise NameError("Hi there") 
+except NameError:
+    print("An exception")
+    raise  #to determine whether the exception was raised or not

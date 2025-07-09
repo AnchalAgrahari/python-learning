@@ -1,0 +1,551 @@
+######			A simple example class
+
+
+
+class test:				#class name
+
+
+#							fun() method
+
+	#simple method
+	def fun(self):				#fun: the name of the method, self: refer to the intence (object) of the class...........self allows to the instance's attributes and other methods.
+		print("Hello")
+
+#derive code
+obj = test()					#object created, obj: A veeriable that holds the instance of the class.
+obj.fun()						#obj: the object that we just created,   .fun(): class the mothod of the obj object
+print()
+
+
+#					init() method
+
+class person:
+	
+	#inti method or construction;
+
+	def __init__(self, name):					#self: current instance, name: a parameter that tske the value when object is created.
+		self.name = name						#this assign the value of name to an instance variable(self.name)
+
+	#sample mwtohd
+
+	def say_hi(self):							#defines the metohd inside the class.
+		print('Hello, my name is ', self.name)
+
+p= person('Anchal')
+p.say_hi()
+p= person("Deepti")
+p.say_hi()
+
+print()
+
+
+#					class variables
+#			creating object
+
+
+class students:
+
+	stream = 'cse'
+
+	def __init__(self, roll_no):
+
+		self.roll_no = roll_no
+
+#creating an object of student class
+
+a = students(11)
+b = students(12)
+
+print("I'm a student of stream: ",a.stream)
+print("of roll no:",a.roll_no)
+print(b.stream)
+print(b.roll_no)
+
+print()
+
+#						()
+
+class Person:
+ 
+ #	constructor
+	def __init__(self,name):
+ 		self.name = name
+ 	#to get name
+	def get_name(self):
+ 		return self.name
+
+ #to check if this person is employee
+
+	def is_employee(self):
+ 		return False
+
+# inherited or sub class (note person in bracket)
+class Employee(Person):
+
+	def is_employee(self):
+		return 	True
+
+#driver code
+zsd = Person("Anchal")
+print(zsd.get_name(), zsd.is_employee())
+
+zsd = Employee("Shubham")
+print(zsd.get_name(), zsd.is_employee())
+
+print()
+
+## 																								
+
+class base1:
+	def __init__(self):
+		self.str1 = "Hyee"
+		
+
+class base2:
+	def __init__(self):
+		self.str2 = "Hii"
+	
+class derived(base1, base2):				#multiple inheeritence
+	def __init__(self):
+		#calling the constructor of base1 and base2 classes
+		base1.__init__(self)
+		base2.__init__(self)
+		
+
+	def printstrs(self):
+		print(self.str1, self.str2)
+
+obj = derived()
+obj.printstrs()
+
+
+####
+
+class Base(object):
+
+	#constructor now accept 'x'
+	def __init__(self, x):
+		self.x = x+100					#using x correctly
+
+class Derived(Base):
+	#construbctor with 'x' and 'y'
+	def __init__(self, x, y):
+		super().__init__(x)			#correct super() call
+		self.y = y 
+	
+	def printXY(self):
+
+		#base x isn't work here becaues super is used in construction
+		print(self.x, self.y)
+
+
+#deriver code
+d = Derived(10, 20)
+d.printXY()
+
+#							
+
+
+
+class School:
+	def __init__(self, name, sub1, sub2, sub3):
+
+	    self.name = name
+		self.sub1 = sub1
+	    self.sub2 = sub2
+	    self.sub3 = sub3
+
+Student = School("Anchal",34,56,78)
+print("My name is : ", Student.name)
+print("My  Englis score is : ", Student.sub1)
+print("My Maths score is : ", Student.sub2)
+print("My physic score is : ", Student.sub3)
+
+
+
+####   Write a Python program to create a Student class with attributes name and age.
+
+
+class Student:
+      def __init__(self, name, age):
+            self.name = name
+            self.age = age
+
+
+q = Student("Anchal", 20)
+w = Student("Ash", 23)
+print("My name is :",q.name, " and I'm", q.age, "year old")
+print(w.name, w.age)
+
+####Create a BankAccount class with a private variable balance.
+#Add a method to deposit and withdraw money while keeping the balance secure.
+
+class BankAccount:
+
+      def __init__(self, deposit, withdraw):
+
+            self.deposit = deposit 
+            self.withdraw = withdraw
+
+      def add__deposit(self, amount):
+
+            self.deposit += amount
+
+      def make_withdraw(self, amount):
+            if amount > self.deposit:
+                  print("Insufficient Bbalance")
+            else:
+                  self.deposit -= amount
+
+account = BankAccount(8000, 00)
+
+account.add__deposit(500)
+
+print(account.deposit)
+
+
+print("The amount in the account is :", account.deposit)
+print("I want to withdraw 500 from account :",account.make_withdraw(500))
+print("Now the amount in the account is  :",account.deposit)
+
+
+
+##### #my code and actual code is below
+
+print()
+class Vehicle:
+      def __init__(self, brand, speed, fule_type):
+            self.brand = brand
+            self.speed = speed
+            self.fuel_type = fule_type
+
+      def car_info(self):
+            print(f"The [{self.brand}] has a speed limit of [{self.speed}] km/h and uses [{self.fuel_type}].")  #here we use 'f' after print so that we wr=ere able to use '{}' 
+
+car1 = Vehicle('Mercdes', 1980, 'gasoline')
+car1.car_info()
+
+
+
+#####Create a Vehicle class with attributes brand and speed.
+
+
+class Vehicle:
+    def __init__(self, brand, speed, fuel_type):
+        self.brand = brand
+        self.speed = speed
+        self.fuel_type = fuel_type  
+
+    def car_info(self):
+        print(f"The \033[1;34m{self.brand}\033[0m has a speed limit of \033[1;31m{self.speed} km/h\033[0m and uses \033[1;32m{self.fuel_type}\033[0m.")
+
+# Creating an instance
+car1 = Vehicle('Mercedes', 1980, 'Gasoline')
+car1.car_info()
+
+#Brand is in Blue (\033[1;34m)
+#Speed is in Red (\033[1;31m)
+#Fuel_Type is in Green (\033[1;32m) 
+
+
+
+#####Create a Vehicle class with attributes brand and speed.
+##Create a Car class that inherits from Vehicle and adds an attribute fuel_type.
+
+
+class Vechile :
+      def __init__(self, brand, speed):
+            self.brand = brand
+            self.speed = speed
+
+      def Vechile_info(self):
+            print(f"the {self.brand} with speed limit {self.speed} km/h ")
+
+
+class Car(Vechile):
+      def __init__(self, brand, speed, fuel_type):
+            super().__init__(brand, speed)
+            self.fuel_type = fuel_type
+
+      def car_info(self):
+            print(f"The \033[1;31m{self.brand}\033[0m with speed limit \033[1;32m{self.speed}\033[0m km/h of fuel type \033[1;33m{self.fuel_type}\033[0m.")
+
+
+car1 = Car('Bentely', 208, 'Petrol')
+car1.car_info()
+print()
+car2 = Car('BMW', 230, 'gasoline')
+car2.car_info()
+
+
+
+
+
+
+
+#				Inheritence	
+
+#single inheritance : a child class inhertie from a single parent class
+#
+#multiple inheritance : a chille class inherite from more than one parent class
+#
+#multilevel inheritance : a chlid class inherete from a parent class, which in turn inherite from another class
+#
+#hierarchical inheritance : multiple child classes inherite from single parent class
+#
+#hybrid inheritance : a combination of two or more type of inheritance
+#
+
+## incomplete
+
+
+class engeneering:
+
+      print("")
+      def __init__(self,type):
+            self.type = type
+
+      def display_type(self):
+            print(f"engeneering type: {self.type}")
+
+class software_engeneering(engeneering):  #single inheritance
+      def opportunity_avaliable(self):
+            print("Frontend Engeneering")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
