@@ -21,17 +21,18 @@ HOW TO COMPARE ALGO :
 
 RATE of GROWTH :
         commanilly use RATE of GROWTH :
-        +-----------------------+-----------------------+------------------------------------------------------------+
-        | Time Complexity       | Name                  | Example                                                    |
-        +-----------------------+-----------------------+------------------------------------------------------------+  
-        |        1              | Constant              |  adding element to the front of a linked list              |
-        |      logn             | logirithimic          |  finding an element in a sorted array                      |
-        |       n               | linear                |  finding an element in an unsorted array                   |
-        |      nlogn            | linear logirithmic    |  sorting n element by divide-and-conqure   -mergsort       |
-        |       n^2             | quadratic             |  shortest path between two nodes in graph                  |
-        |       n^3             | cubic                 |  matrix multiplication                                     |
-        |       2^n             | exponential           |  the tower of hanoi problem                                |
-        +-----------------------+-----------------------+------------------------------------------------------------+
+        ### Commonly Used Rates of Growth:
+
+| Time Complexity | Name                | Example                                                 |
+|-----------------|---------------------|---------------------------------------------------------|
+| 1               | Constant            | Adding element to the front of a linked list            |
+| log n           | Logarithmic         | Finding an element in a sorted array                    |
+| n               | Linear              | Finding an element in an unsorted array                 |
+| n log n         | Linear Logarithmic  | Sorting n elements using divide-and-conquer (mergesort) |
+| n²              | Quadratic           | Shortest path between two nodes in a graph              |
+| n³              | Cubic               | Matrix multiplication                                   |
+| 2ⁿ              | Exponential         | The Tower of Hanoi problem                              |
+
 
 we have 3 type of analysis :
  1. worst case : slowest time to complete(Omega Ω)
