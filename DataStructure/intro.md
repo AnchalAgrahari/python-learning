@@ -1,19 +1,24 @@
-## DATA STRUCTURE: a perticular way of Organizing and storing data.
+## DATA STRUCTURE: 
+a perticular way of Organizing and storing data.
 linear dataStructure : accessed in a sequential order but it is not compulsory to stor ass the element sequentily. like stack and queues
 non-linear dataStructure : stored in a non-linear order . like tree and graphs
 
-## ABSTRACT DATATYPE : to simplify the process of solving the problem , we combine the dataStructure with theri problem and  we call this ADts. 
+## ABSTRACT DATATYPE :
+ to simplify the process of solving the problem , we combine the dataStructure with theri problem and  we call this ADts. 
 decleration of data 
 decleration of operation
-#### ADTs : Linked Lists, Stacks, Queues, proritty queues,Binary Trees, Dictionary, Disjoint Sets(Union and Find), Hash table, Graphs
+#### ADTs : 
+Linked Lists, Stacks, Queues, proritty queues,Binary Trees, Dictionary, Disjoint Sets(Union and Find), Hash table, Graphs
 like stacks uses LIFO(Last In First Out) 
 
-## ALGORITHM : An algoritm is the step by step unambiguous instruction to solve the problem.
+## ALGORITHM : 
+An algoritm is the step by step unambiguous instruction to solve the problem.
 we have 2 criteria for judging the merits of the algorithm :
 1. **Correctness** – Does it solve the problem accurately?
 2. **Efficiency** – Does it do so using minimal time and space?
 
-## ANALYSIS/GOAL  of Algorithim : The goal of algorithm analysis is to determine which algorithm is more efficient, mainly in terms of:
+## ANALYSIS/GOAL  of Algorithim : 
+The goal of algorithm analysis is to determine which algorithm is more efficient, mainly in terms of:
  - **Time complexity**
  - **Space complexity**
 
