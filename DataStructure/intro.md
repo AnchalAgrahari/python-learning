@@ -25,11 +25,10 @@ It may also involve other factors like:
 
 RUNNING TIME ANALYSIS 
 
-HOW TO COMPARE ALGO : 
-        1. execution time?
-        2. number of statement executed?
-        3. ideal solution?
-
+HOW TO COMPARE ALGORITHMS : 
+1. **Execution time** – How long does it take to run?
+2. **Number of statements executed** – How much work is being done internally?
+3. **Ideal solution** – Can we do better? Is it optimal?
 RATE of GROWTH :
         ### Commonly Used Rates of Growth:
 
