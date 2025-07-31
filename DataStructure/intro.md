@@ -9,9 +9,20 @@ ADTs : Linked Lists, Stacks, Queues, proritty queues,Binary Trees, Dictionary, D
 like stacks uses LIFO(Last In First Out) 
 
 ALGORITHM : An algoritm is the step by step unambiguous instruction to solve the problem.
-we have 2 criteria for judging the merits of the algorithm : 1: correctness , 2: efficiency 
+we have 2 criteria for judging the merits of the algorithm :
+1. **Correctness** – Does it solve the problem accurately?
+2. **Efficiency** – Does it do so using minimal time and space?
 
-ANALYSIS/GOAL  of Algorithim : helps to detremine which algo is more efficient mainly in term of time and space  factor but also in other( memory,developer effort etc)
+ANALYSIS/GOAL  of Algorithim : The goal of algorithm analysis is to determine which algorithm is more efficient, mainly in terms of:
+        - **Time complexity**
+        - **Space complexity**
+
+It may also involve other factors like:
+
+- **Memory usage**
+- **Developer effort**
+- **Readability / maintainability**
+
 RUNNING TIME ANALYSIS 
 
 HOW TO COMPARE ALGO : 
@@ -20,7 +31,6 @@ HOW TO COMPARE ALGO :
         3. ideal solution?
 
 RATE of GROWTH :
-        commanilly use RATE of GROWTH :
         ### Commonly Used Rates of Growth:
 
 | Time Complexity | Name                | Example                                                 |
