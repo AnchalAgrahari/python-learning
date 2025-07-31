@@ -1,21 +1,21 @@
-DATA STRUCTURE: a perticular way of Organizing and storing data.
+## DATA STRUCTURE: a perticular way of Organizing and storing data.
 linear dataStructure : accessed in a sequential order but it is not compulsory to stor ass the element sequentily. like stack and queues
 non-linear dataStructure : stored in a non-linear order . like tree and graphs
 
-ABSTRACT DATATYPE : to simplify the process of solving the problem , we combine the dataStructure with theri problem and  we call this ADts. 
+## ABSTRACT DATATYPE : to simplify the process of solving the problem , we combine the dataStructure with theri problem and  we call this ADts. 
 decleration of data 
 decleration of operation
-ADTs : Linked Lists, Stacks, Queues, proritty queues,Binary Trees, Dictionary, Disjoint Sets(Union and Find), Hash table, Graphs
+#### ADTs : Linked Lists, Stacks, Queues, proritty queues,Binary Trees, Dictionary, Disjoint Sets(Union and Find), Hash table, Graphs
 like stacks uses LIFO(Last In First Out) 
 
-ALGORITHM : An algoritm is the step by step unambiguous instruction to solve the problem.
+## ALGORITHM : An algoritm is the step by step unambiguous instruction to solve the problem.
 we have 2 criteria for judging the merits of the algorithm :
 1. **Correctness** – Does it solve the problem accurately?
 2. **Efficiency** – Does it do so using minimal time and space?
 
-ANALYSIS/GOAL  of Algorithim : The goal of algorithm analysis is to determine which algorithm is more efficient, mainly in terms of:
-        - **Time complexity**
-        - **Space complexity**
+## ANALYSIS/GOAL  of Algorithim : The goal of algorithm analysis is to determine which algorithm is more efficient, mainly in terms of:
+ - **Time complexity**
+ - **Space complexity**
 
 It may also involve other factors like:
 
@@ -25,11 +25,11 @@ It may also involve other factors like:
 
 RUNNING TIME ANALYSIS 
 
-HOW TO COMPARE ALGORITHMS : 
+## HOW TO COMPARE ALGORITHMS : 
 1. **Execution time** – How long does it take to run?
 2. **Number of statements executed** – How much work is being done internally?
 3. **Ideal solution** – Can we do better? Is it optimal?
-RATE of GROWTH :
+## RATE of GROWTH :
         ### Commonly Used Rates of Growth:
 
 | Time Complexity | Name                | Example                                                 |
@@ -43,7 +43,7 @@ RATE of GROWTH :
 | 2ⁿ              | Exponential         | The Tower of Hanoi problem                              |
 
 
-we have 3 type of analysis :
+#### we have 3 type of analysis :
  1. worst case : slowest time to complete(Omega Ω)
  2. best case : fastest time to complete ( Big-O)
  3. aveerage case                       (Theta θ)
