@@ -1,0 +1,16 @@
+ #local variable that are only accesiable from inside the function
+def thefunction() :
+    fun = 458
+    print(fun)
+                   
+thefunction() 
+
+
+## here we call define fun in global varaible but call the value in inner variable 
+def thefunction() :
+    fun = 458
+    def innerfunction():
+        print(fun)
+    innerfunction()
+                   
+thefunction() 

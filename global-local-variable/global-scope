@@ -1,0 +1,31 @@
+#here we define the value of x globally noe we can access x any where numbers of times ..
+x = 250
+def randomnum():
+    print(x)
+
+randomnum()  #250
+
+print(x)        # 250 
+
+#here we define the value of x globally noe we can access x any where numbers of times .. even we can define local varaible
+x = 250
+def randomnum():
+    x=10
+    print(x)
+
+randomnum()             #10
+
+print(x)                #250
+
+#we can globalise the value by KEYWORD "global"
+def randomnum():
+    global x
+    x=250
+
+    asd = 345
+    print(asd)
+
+randomnum()                     #345
+        
+
+print(x)            #250           
