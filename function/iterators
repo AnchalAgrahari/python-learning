@@ -154,7 +154,33 @@ print(list(itertools.repeat(5,10)))
 
 
 
+#				permuntation()
 
+from itertools import permutations
+
+#all permuntation = n!
+per = permutations([1,2,3])
+for i in list(per):
+	print(i)
+
+print()
+
+# 					combination()
+from itertools import combinations
+
+#all permuntation = n!
+per = combinations([1,2,3],2)
+for i in list(per):
+	print(i)
+
+
+#				combinations_with_replacement()
+from itertools import combinations_with_replacement
+
+comb = combinations_with_replacement([1,2,3],2)
+
+for i in list(comb):
+	print(i)
 
 
 

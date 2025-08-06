@@ -1,0 +1,15 @@
+## to get balanced parantheses
+
+def balanced_parantheses(text):
+    stack =[]
+    for char in text:
+        if char == '(':
+            stack.append(char)
+        elif char == ')':
+            if not stack: 
+                return False
+        else: 
+            stack.pop()
+
+    return len(stack) == 0
+print(balanced_parantheses("((()))"))

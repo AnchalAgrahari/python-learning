@@ -33,7 +33,7 @@ print(" ")
 import random
 
 #print random integer between 0 to 10
-print(random.randint(1,10))
+print(random.randint(1,10))					# 10 is include
 
 #print random flooting between 0 to 1
 print(random.random())
@@ -44,7 +44,42 @@ list =[1,4, 876, "python" , 45]
 #a random element from a set such as a list
 
 print(random.choice(list))
+
+print("")
+
+print("A random number from range is :", end="")
+print(random.randrange(5,20))			#20 is exclued
+print(random.randrange(1,10))
+
+
+# randrange(strat,stop,step)
+print(random.randrange(20,60,3))			# (start, stop,step)
+print(random.randrange(20,60,2))		# (start from, end before, odd or even)
+
+#using seed function we get same random number everytime on a seeded number:
+#using seed() to seed a random number
+random.seed(8)
+print("The mapped random number with 8 is :", end="")
+print(random.random())
+
+
+#						shuffle()and uniform()
+
+import random
+lk=[1,2,3,4,5,2]
+
+print("The list before shuffle is :",end="")
+for i in range(0, len(lk)):
+	print(lk[i],end="")
+
+print("")
  
+random.shuffle(lk)
+print("The list after shuffle is :",end="")
+for i in range(0, len(lk)):
+	print(lk[i],end="")
+
+
 print(" ")
 ##############				##DATETIME
 

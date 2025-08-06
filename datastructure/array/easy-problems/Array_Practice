@@ -1,0 +1,91 @@
+#Given an array of positive integers arr[] of size n, the task
+# is to find second largest distinct element in the array.
+
+#Note: If the second largest element does not exist, return -1.
+
+def getsecondlargest(arr):
+	n = len(arr)			#store the element in arr
+
+	arr.sort()				#will sort the array in acending order
+
+	for i in range (n - 2,-1,-1): #n - 2 → Starts from the second last index (n-1 is the last index).
+								  #-1 → Stops at index 0 (inclusive).
+								  #-1 → Moves backwards in steps of -1.
+		if arr[i] !=arr[n - 1]:		#compare arr[i](current element) with arr[n-1](largest element)
+
+			return arr[i]
+
+	return -1 	#if no second largest element found return -1
+print()
+
+if __name__ == "__main__":
+	arr= list(map(int, input("Enter numbers seprated by space:").split()))
+	arr.sort()
+	print("your array:", arr)
+
+	if len(arr) < 2:
+		print("Error: Array must have at least two distinct element.")
+	else:
+		print("Second Largest Element : ", getsecondlargest(arr))
+	
+
+
+
+#printting the middle term of the array given by the user .split
+
+def middle_term_of_the_array(arr):
+    n = len(arr)
+    arr.sort()
+
+    return arr[n//2]
+print ()
+if __name__ == "__main__":
+    
+    arr = list(map(int, input("Enter the element with spacing:").split() ))
+
+    if len(arr) <2:
+        print("ERROR! Array must contain at least 2 element")
+    else:
+         print("The middle term of the Array is :",middle_term_of_the_array(arr))
+ 
+ 
+
+ #printing third largest element of the array given by user that
+ #required atleat 3 element to compared and if no third largest 
+ #element fount the it print -1
+
+ def third_largest_element(arr):
+    n = len(arr)
+    arr.sort()
+
+    for i in range (n -3,-1,-1):
+        if arr[i] != arr[n -1] and arr[i] != arr[n-2]: 
+            return arr[i]
+    return -1
+
+print()
+if __name__ == '__main__':
+  
+    arr= list(map(int, input("Enter the element by spacing :").split()))
+
+    if len(arr) < 3:
+        print("ERROR! array needs more thean 3 element")
+    else:
+        print("Third Largest Element : ", third_largest_element(arr))
+
+
+
+
+
+
+
+
+import array
+arr = array.array('i', [1, 2, 3, 4, 5])
+
+arr.reverse()
+print("Reversed array:", *arr)
+
+       
+
+

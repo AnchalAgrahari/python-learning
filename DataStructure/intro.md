@@ -47,6 +47,9 @@ RUNNING TIME ANALYSIS
 | n³              | Cubic               | Matrix multiplication                                   |
 | 2ⁿ              | Exponential         | The Tower of Hanoi problem                              |
 
+// Relatipship between different Rate of Growth :
+         1 -> log logn -> √logn -> log^2 n -> 2 ^logn -> n -> log(n!) -> n logn -> n^2 -> 2^n -> 4^n -> n! -> 2^2^n
+
 
 #### we have 3 type of analysis :
  1. worst case : slowest time to complete(Omega Ω)
@@ -54,6 +57,5 @@ RUNNING TIME ANALYSIS
  3. aveerage case                       (Theta θ)
                 LOWER BOUND <= Average Time <= UPPER BOUND
 
-
-
-
+# Big -O  Notaation 
+It describe the performance or complexity of an algorithim in term of time(how much time it takes) and space(how much memory it uses)

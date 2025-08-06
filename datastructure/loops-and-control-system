@@ -6,6 +6,12 @@ count = 1
 while(count < 3):
 	print("Hii")
 	count = count +1
+"""
+Iteration	count Value	Condition count < 3	Prints	count After Increment
+1		1		True			Hii	2
+2		2		True			Hii	3
+3		3		False (loop ends)	—	—
+"""
 
 
 
@@ -69,7 +75,7 @@ for letter in l:
 	print (letter)
 
 
-###############################################################################
+################################
 
 #split statement:				"split the string into list with space "
 
@@ -79,36 +85,78 @@ print(l)						#{this is the output :: ['hii', 'hello'] }
 
 s="hii , hello"					#"split the string into list with comma "
 l=s.split(',')
-print(l)						#{this is the output :: ['hii', 'hello'] }	
+print(l)						#{this is the output :: ['hii ', ' hello'] }	
+
+print()
+
+print()
+
+print()
+print()
+
+print()
+
+
+##############################################################################################################################################################
+
+
+# 								LOOPING TECHNIQUES
 
 
 
+#  enumerate() function:					print the list with index
+ 
+for key, values in enumerate(['the','big','bang','theory']):
+	print(key, values)
+
+print()
+
+
+##					zip()
+
+question = ['Name ','Color ','Shape ']
+answer  =['Apple','Red','Circle']			
+
+#using zip() to combine two containers
+
+for question, answer in zip(question, answer):
+	print('What is your {0}: I am {1}.'.format(question, answer))
+
+print()
+
+
+#				iteritems() and items()
 
 
 
+r = {"hello": "there", "stephen!":"how are you" }
 
+#using items() to print the dictionary key-value pair
 
+print("The key value pair using items is : ") 
+for i,j in r.items():
+	print(i,j)
 
+#			sorted() and reversed() function
 
+lk= [1,2,3,4,3,2,1,1]
 
+#usind sorted() to print the list in sorted order
 
+print("The list in sorted order: ")
+for i in sorted(lk):
+	print(i)
+print("")
 
+print("The list in sorted order (without duplicates) is : ")
+for i in sorted(set(lk)):
+	print(i)
 
+print("")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("The list in reversed order Is : ", end="")
+for i in reversed(lk):
+	print(i)
 
 
 

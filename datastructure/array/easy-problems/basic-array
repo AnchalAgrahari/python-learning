@@ -4,66 +4,118 @@
 import array as arr
 
 def main():
-        a= arr.array('i',[1,2,3,5,6,9])
+        a= arr.array('i',[1,2,3,5,9,6])
         print(a[0])
         
-        for i in range(0,6):					#print 1st 6 element
+        for i in range(0,5):
         	print(a[i], end=" ")
-        print()                 #for a clean line break
+print()                 #for a clean line break
 
 
-        #inserting element 4,7,8, into the array
-        a.insert(3,4)
-        a.insert(6,7)
-        a.insert(7,8)
-
-        print("array after insertion:")
-        for element in a:
-        	print(element, end=" ")
-        print()
-
-        a.reverse()
-        print("Reverse array:")
-        for i in a:
-                print(i, end=" ")
-
-        print()
-
-
+        #to insert/adding element in array 
+               
 
 
 def reverse_and_print_array():
 
-	a= arr.array('i',[1,2,3,5,6,9])
-	a.extend([4,7,8])
-
+	a=arr.array('i',[1,2,3,5,9,6])
 
 	a.reverse() 
-	print("Reversed array:")
 
 	for i in a :
                 					#reverse the array
 	     print(i, end=" ")
-	print()
 
 
 
-
-
-
-#call the main function
+                #call the main function
 if __name__=="__main__":
         main()                  			#call the original functiona;ity
         reverse_and_print_array()   		#call the new functionality
 
 
+import array as arr
+print()
+
+a = arr.array('i',[1,2,3,4,5])
+print(a[4])
+print()
+a.append(0)
+print(a)
+print()
+
+        #accessing array items
+
+import array as arr
+a = a.array('i',[1,2,3,4,5])
+print(a[0])
+print(a[4])
+
+b = a.array('i',[1.2,4.5,5.6,7.8,5.9])
+print(b[0])
+print(b[4])
 
 
 
+##                      Slicing of an Array
+import array as arr
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+a = arr.array('i', l)
+
+
+Sliced_array = a[3:8]
+print(Sliced_array)
+
+Sliced_array = a[5:]
+print(Sliced_array)
+
+Sliced_array = a[:]
+print(Sliced_array)
+
+
+import array as arr
+k = [1,2,3,4,5,6]
+
+a=  arr.array('i',k)
+
+print(a)
+
+#slicing of an array (to print from a specific range we use slice operation )
+slice_array = a[0:4]
+print(slice_array)
+slice_array = a[3:5]
+print(slice_array)
+
+#searching the element (normally provie the index operation with element that we need)
+print(a.index(2))           #in array a element 2 has at index 1
+index = a.index(2)
+print(f"element 2 found at index at :{index}")
+
+
+# adding element
+a.append(7)
+a.append(8)
+a.append(9)
+print(a)
+
+a.extend([10,11,12,13,14,15])
+print(a)
+
+#counting element in array
+count = a.count(2)    #counting perticular element
+print("occurence of 2 in array" ,count)
+
+print("element in array:", len(a))  #counting length of array
+
+#   reversing the element
+
+a.reverse()
+print(a)
 
 
 
-
+                    
 
 
 

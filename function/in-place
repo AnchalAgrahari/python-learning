@@ -1,0 +1,261 @@
+
+
+
+#        				IN_PLACE OPERATRO
+
+#			iadd() and iconcat()
+
+print(" ")
+import operator
+
+#using iadd() to add and assign the value:
+
+s = operator.iadd(4,8)
+
+print(" The value after assigning :", end=" ")
+print(s)
+
+
+
+q= "hii"
+w= "!!"
+
+t= operator.iconcat(q,w)
+#using iconcat() to add the string :
+
+print("The strint after concatenation is : ", end="")
+print(t)
+
+print("")
+
+#							isub() and imul()
+
+import operator
+
+x= operator.isub(5,2)
+
+print("The valus after subtracting and assigining is :",end="")
+print(x)
+
+y= operator.imul(5,2)
+
+print("The valus after multiplying and assigining is :",end="")
+print(y)
+
+
+print()
+
+#							itruediv() and imod()
+import operator
+
+a= operator.itruediv(6,3)
+
+print("The valus after dividing and assigining is :",end="")
+print(a)
+
+w= operator.imod(4,5)
+print("The valus after modlus and assigining is :",end="")
+print(w)
+print("The valus after modlus and assigining is :",end="")
+print(w)
+
+print("")
+
+#				ixor() and ipow()
+
+
+import operator
+
+b= operator.ixor(12,6)
+
+print("The valus after xoring and assigining is :",end="")
+print(b)
+
+c= operator.ipow(2,3)
+print("The valus after exponentiating and assigining is :",end="")
+print(c)
+
+print()
+
+# 						ior() and iand()
+
+import operator
+z= operator.ior(1,2)
+
+print("The valus after bitwise or and assigining is :",end="")
+print(z)
+
+f= operator.iand(1,2)
+print("The valus after bitwise and, and assigining is :",end="")
+print(f)
+
+print()
+
+#					ilshift() and irshift()
+
+import operator
+
+k= operator.ilshift(2,3)
+print("The valus after bitwise left shift and assigining is :",end="")
+print(k)
+
+
+l= operator.irshift(2,3)
+print("The valus after bitwise right shift and assigining is :",end="")
+print(l)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

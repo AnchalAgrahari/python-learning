@@ -62,6 +62,78 @@ print (temp)
 
 
 
+#### 					named tuple
+
+
+#							getattr()
+
+import collection
+
+#deleration of named tuple()
+Std = collection.namerdtuple('Std',[Name,Age,DOB])
+
+#Adding calues
+S = Std('Anchal','20','12/09/2004')
+
+#Access using index
+print("The student age using index is:", end="")
+print(S[1])
+
+#Access using name
+print("The student name using ketname is:", end="")
+print(S.name)
+
+#Access using getattr()
+print("The student DOB using getattr is:", end="")
+print(gatattr(S.'DOB'))
+
+
+
+					
+#                        make(), asdict(), (**__) named tuple function
+
+import collections
+
+
+Student = collections.namedtuple('Student',['name','age','DOB'])  #declearing namedtuple
+
+a = Student('Anchal','20','12-09-2004')                     #list
+li = ['Shubham','22','29-05-2002']                          #iterable
+dic = {'name': 'Deepti','age' : '20', 'DOB' : '26-08-2004'} # dictionary
+
+print()
+print("The namedtuple instance using iterable is :")
+print(Student._make(li))                                     #used to create a named tuple from an iterable.
+print()
+print("The orderedDic instance using namedtuple is :")
+print(a._asdict())                                          #to convert an object into a dictionary.
+print()
+print("The namedtuple instance using dic is :")
+print(Student(**dic))                                       #Unpack Dictionary into Function Arguments
+print()
+
+
+
+#                             _field(), and _replace() named tuple function
+
+import collections
+
+
+Student = collections.namedtuple('Student',['name','age','DOB'])  #declearing namedtuple
+
+a = Student('Anchal','20','12-09-2004')                     #list
+
+print()
+print("All the feilds of Student are :")
+print(a._fields)
+print()
+print("The origina namedtuple was:")
+print(a)
+print()
+print("The modified nameduple is :")
+print(a._replace(name = 'Deepi', DOB = '26-08-2004'))
+
+
 
 
 
