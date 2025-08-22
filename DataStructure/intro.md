@@ -82,12 +82,12 @@ Asymptotic Analysis is the mathematical way of evaluating the efficiency of algo
 we have some genarel rules to help us determine the running time of the Algorithim.
 
 1. **Loops** : The runnig time of the loop is at most, the runtime of the statement inside the loops multiplied by the the number of iterations.
- -  Total Time = a constant c * n = cn = O(n).
+ -  Total Time = a constant c * n = Cₙ = O(n).
 2. **Nested Loop** : Analysis fron inside out. Total running time si the product of size of all loops 
- - Total Time = c * n * n = O(n^2).
+ - Total Time = c * n * n = O(n²).
 3. **Consecutive statement** : Add the time complexities for each statment.
- - Total tile =  c0 + c1 n + c2 n^2 = O(n^2).
+ - Total tile = C₀ + C₁ n + C₂ n² = O(n²).
 4. **If-else-statment** : worst case running time . the test plus either  the then part or the else part
- -  Total time = c0 + c1 * n = O(n).
+ -  Total time = C₀ + C₁ * n = O(n).
 5. **Loagrithim Compliexity** : An algorithm is  O(*logn*) if ti take constant time to cut th eproblem size by fraction.
  - Total time = O(*logn*)
