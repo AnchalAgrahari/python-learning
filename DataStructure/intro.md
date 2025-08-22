@@ -57,5 +57,24 @@ RUNNING TIME ANALYSIS
  3. aveerage case                       (Theta θ)
                 LOWER BOUND <= Average Time <= UPPER BOUND
 
-# Big -O  Notaation 
+# Big -O  Notation (WORST case)
+It gives the upper bound of an algorithm
 It describe the performance or complexity of an algorithim in term of time(how much time it takes) and space(how much memory it uses)
+
+# Omega (Ω)  Notation (BEST case)
+It gives lower bound of an algorithm
+I describe the best case performance or complexity of an algorithm -- how fast it can run or what is the least amount of time or step algorithem could take.
+
+# Theta (θ) Notation (AVERAGE/EXACT case)
+It gives the tight bound of an algorithim.
+It means the agorithm always takes about the same time no matter the case it is best or worst 
+
+# Asymptotic Analysis :
+It tells us how fast or slow an algorithm becomes when the input size increases.
+
+Asymptotic Analysis is the mathematical way of evaluating the efficiency of algorithms by focusing on their growth rate as input size approaches infinity.
+
+**Why do we use it?**
+1. Actual running time depends on hardware, compiler, coding style → not reliable for comparison.
+2. Asymptotic analysis ignores machine-dependent constants and focuses only on the growth rate of the algorithm.
+
