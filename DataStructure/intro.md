@@ -80,4 +80,4 @@ Asymptotic Analysis is the mathematical way of evaluating the efficiency of algo
 
 ### Guideline for Asymptotic Analysis 
 we have some genarel rules to help us determine the running time of the Algorithim.
-1. ***Loops *** : The runnig time of the loop is at most, the runtime of the statement inside the loops multiplied by the the number of iterations.
+ ***Loops *** : The runnig time of the loop is at most, the runtime of the statement inside the loops multiplied by the the number of iterations.
