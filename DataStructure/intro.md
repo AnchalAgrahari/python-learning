@@ -48,7 +48,7 @@ RUNNING TIME ANALYSIS
 | 2ⁿ              | Exponential         | The Tower of Hanoi problem                              |
 
 // Relatipship between different Rate of Growth :
-         1 -> log logn -> √logn -> log^2 n -> 2 ^logn -> n -> log(n!) -> n logn -> n^2 -> 2^n -> 4^n -> n! -> 2^2^n
+        1 -> log logn -> √logn -> log^2 n -> 2 ^logn -> n -> log(n!) -> n logn -> n^2 -> 2^n -> 4^n -> n! -> 2^2^n
 
 
 #### we have 3 type of analysis :
@@ -80,4 +80,14 @@ Asymptotic Analysis is the mathematical way of evaluating the efficiency of algo
 
 ### Guideline for Asymptotic Analysis 
 we have some genarel rules to help us determine the running time of the Algorithim.
- ***Loops *** : The runnig time of the loop is at most, the runtime of the statement inside the loops multiplied by the the number of iterations.
+
+1. **Loops** : The runnig time of the loop is at most, the runtime of the statement inside the loops multiplied by the the number of iterations.
+ -  Total Time = a constant c * n = cn = O(n).
+2. **Nested Loop** : Analysis fron inside out. Total running time si the product of size of all loops 
+ - Total Time = c * n * n = O(n^2).
+3. **Consecutive statement** : Add the time complexities for each statment.
+ - Total tile =  c0 + c1 n + c2 n^2 = O(n^2).
+4. **If-else-statment** : worst case running time . the test plus either  the then part or the else part
+ -  Total time = c0 + c1 * n = O(n).
+5. **Loagrithim Compliexity** : An algorithm is  O(*logn*) if ti take constant time to cut th eproblem size by fraction.
+ - Total time = O(*logn*)
