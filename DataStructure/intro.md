@@ -69,5 +69,12 @@ I describe the best case performance or complexity of an algorithm -- how fast i
 It gives the tight bound of an algorithim.
 It means the agorithm always takes about the same time no matter the case it is best or worst 
 
+# Asymptotic Analysis :
+It tells us how fast or slow an algorithm becomes when the input size increases.
 
-]
+Asymptotic Analysis is the mathematical way of evaluating the efficiency of algorithms by focusing on their growth rate as input size approaches infinity.
+
+**Why do we use it?**
+1. Actual running time depends on hardware, compiler, coding style → not reliable for comparison.
+2. Asymptotic analysis ignores machine-dependent constants and focuses only on the growth rate of the algorithm.
+
