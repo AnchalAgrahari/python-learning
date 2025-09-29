@@ -1,0 +1,10 @@
+class Dog:
+    species = "Canine"
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+dog1 = Dog("Cookie",3)
+print("MY dog's name is ",dog1.name)
+print("He is ",dog1.age,"yeas old")
+print("He is from",dog1.species,"species")
