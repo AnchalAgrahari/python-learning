@@ -149,7 +149,6 @@ d.printXY()
 
 class School:
 	def __init__(self, name, sub1, sub2, sub3):
-
 	    self.name = name
 		self.sub1 = sub1
 	    self.sub2 = sub2
