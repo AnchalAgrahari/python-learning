@@ -91,3 +91,6 @@ we have some genarel rules to help us determine the running time of the Algorith
  -  Total time = C₀ + C₁ * n = O(n).
 5. **Loagrithim Compliexity** : An algorithm is  O(*logn*) if ti take constant time to cut th eproblem size by fraction.
  - Total time = O(*logn*)
+
+## ALGORITHM ANALYSIS
+1. Linear Data Structures
