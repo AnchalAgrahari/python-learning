@@ -20,7 +20,7 @@ def infixToPostfix(s):
         if ('a' <= c <= 'z') or ('A' <= c <= 'Z') or ('0' <= c <= '9'):
             res.append(c)
 
-        # If '(', push to stack
+        If '(', push to stack
         elif c == '(':
             st.append('(')
 
