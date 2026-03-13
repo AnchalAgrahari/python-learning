@@ -1,6 +1,7 @@
 import json
 import boto3
 
+#to adding tag in the s3
 #reading  json file present in systems3clientlist
 def read_file_frome_local(file_name):
     try:
