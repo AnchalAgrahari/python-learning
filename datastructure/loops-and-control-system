@@ -141,7 +141,7 @@ for i,j in r.items():
 
 lk= [1,2,3,4,3,2,1,1]
 
-#usind sorted() to print the list in sorted order
+##usind sorted() to print the list in sorted order
 
 print("The list in sorted order: ")
 for i in sorted(lk):
