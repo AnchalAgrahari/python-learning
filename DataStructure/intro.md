@@ -1,96 +1,48 @@
-## DATA STRUCTURE: 
-a perticular way of Organizing and storing data.
-linear dataStructure : accessed in a sequential order but it is not compulsory to stor ass the element sequentily. like stack and queues
-non-linear dataStructure : stored in a non-linear order . like tree and graphs
+## Why Do We Use Asymptotic Analysis?
 
-## ABSTRACT DATATYPE :
- to simplify the process of solving the problem , we combine the dataStructure with theri problem and  we call this ADts. 
-decleration of data 
-decleration of operation
-#### ADTs : 
-Linked Lists, Stacks, Queues, proritty queues,Binary Trees, Dictionary, Disjoint Sets(Union and Find), Hash table, Graphs
-like stacks uses LIFO(Last In First Out) 
+1. Actual running time depends on hardware, compiler, and coding style — making it unreliable for fair comparison between algorithms.
+2. Asymptotic analysis ignores machine-dependent constants and focuses solely on the **growth rate** of an algorithm as input size increases.
 
-## ALGORITHM : 
-An algoritm is the step by step unambiguous instruction to solve the problem.
-we have 2 criteria for judging the merits of the algorithm :
-1. **Correctness** – Does it solve the problem accurately?
-2. **Efficiency** – Does it do so using minimal time and space?
+---
 
-## ANALYSIS/GOAL  of Algorithim : 
-The goal of algorithm analysis is to determine which algorithm is more efficient, mainly in terms of:
- - **Time complexity**
- - **Space complexity**
+## Guidelines for Asymptotic Analysis
 
-It may also involve other factors like:
+These general rules help determine the time complexity of an algorithm:
 
-- **Memory usage**
-- **Developer effort**
-- **Readability / maintainability**
+### 1. Loops
+The running time of a loop is at most the running time of the statement(s) inside the loop, multiplied by the number of iterations.
+> Total Time = c × n = **O(n)**
 
-RUNNING TIME ANALYSIS 
+### 2. Nested Loops
+Analyze from the innermost loop outward. The total running time is the product of the sizes of all loops.
+> Total Time = c × n × n = **O(n²)**
 
-## HOW TO COMPARE ALGORITHMS : 
-1. **Execution time** – How long does it take to run?
-2. **Number of statements executed** – How much work is being done internally?
-3. **Ideal solution** – Can we do better? Is it optimal?
-## RATE of GROWTH :
-        ### Commonly Used Rates of Growth:
+### 3. Consecutive Statements
+Add the time complexities of each statement individually, then take the dominant term.
+> Total Time = C₀ + C₁n + C₂n² = **O(n²)**
 
-| Time Complexity | Name                | Example                                                 |
-|-----------------|---------------------|---------------------------------------------------------|
-| 1               | Constant            | Adding element to the front of a linked list            |
-| log n           | Logarithmic         | Finding an element in a sorted array                    |
-| n               | Linear              | Finding an element in an unsorted array                 |
-| n log n         | Linear Logarithmic  | Sorting n elements using divide-and-conquer (mergesort) |
-| n²              | Quadratic           | Shortest path between two nodes in a graph              |
-| n³              | Cubic               | Matrix multiplication                                   |
-| 2ⁿ              | Exponential         | The Tower of Hanoi problem                              |
+### 4. If-Else Statements
+Take the worst-case running time — the condition check plus whichever branch (then or else) takes longer.
+> Total Time = C₀ + C₁ × n = **O(n)**
 
-// Relatipship between different Rate of Growth :
-        1 -> log logn -> √logn -> log^2 n -> 2 ^logn -> n -> log(n!) -> n logn -> n^2 -> 2^n -> 4^n -> n! -> 2^2^n
+### 5. Logarithmic Complexity
+An algorithm is O(log n) if it takes constant time to reduce the problem size by a constant fraction
+(e.g., halving the input each step, as in binary search).
+> Total Time = **O(log n)**
 
+---
 
-#### we have 3 type of analysis :
- 1. worst case : slowest time to complete(Omega Ω)
- 2. best case : fastest time to complete ( Big-O)
- 3. aveerage case                       (Theta θ)
-                LOWER BOUND <= Average Time <= UPPER BOUND
+## Algorithm Analysis
 
-**Big -O  Notation (WORST case)**
-It gives the upper bound of an algorithm
-It describe the performance or complexity of an algorithim in term of time(how much time it takes) and space(how much memory it uses)
+The goal of algorithm analysis is to predict the resources (primarily **time** and **space**) an algorithm
+requires without implementing it. We express this using **Big-O notation**, which describes the upper bound
+on growth rate and allows us to compare algorithms in a machine-independent way.
 
-**Omega (Ω)  Notation (BEST case)**
-It gives lower bound of an algorithm
-I describe the best case performance or complexity of an algorithm -- how fast it can run or what is the least amount of time or step algorithem could take.
-
-**Theta (θ) Notation (AVERAGE/EXACT case)**
-It gives the tight bound of an algorithim.
-It means the agorithm always takes about the same time no matter the case it is best or worst 
-
-## Asymptotic Analysis :
-It tells us how fast or slow an algorithm becomes when the input size increases.
-
-Asymptotic Analysis is the mathematical way of evaluating the efficiency of algorithms by focusing on their growth rate as input size approaches infinity.
-
-**Why do we use it?**
-1. Actual running time depends on hardware, compiler, coding style → not reliable for comparison.
-2. Asymptotic analysis ignores machine-dependent constants and focuses only on the growth rate of the algorithm.
-
-### Guideline for Asymptotic Analysis 
-we have some genarel rules to help us determine the running time of the Algorithim.
-
-1. **Loops** : The runnig time of the loop is at most, the runtime of the statement inside the loops multiplied by the the number of iterations.
- -  Total Time = a constant c * n = Cₙ = O(n).
-2. **Nested Loop** : Analysis fron inside out. Total running time si the product of size of all loops 
- - Total Time = c * n * n = O(n²).
-3. **Consecutive statement** : Add the time complexities for each statment.
- - Total tile = C₀ + C₁ n + C₂ n² = O(n²).
-4. **If-else-statment** : worst case running time . the test plus either  the then part or the else part
- -  Total time = C₀ + C₁ * n = O(n).
-5. **Loagrithim Compliexity** : An algorithm is  O(*logn*) if ti take constant time to cut th eproblem size by fraction.
- - Total time = O(*logn*)
-
-## ALGORITHM ANALYSIS
-1. Linear Data Structures
+| Complexity   | Name          | Example              |
+|--------------|---------------|----------------------|
+| O(1)         | Constant      | Array index access   |
+| O(log n)     | Logarithmic   | Binary search        |
+| O(n)         | Linear        | Linear search        |
+| O(n log n)   | Linearithmic  | Merge sort           |
+| O(n²)        | Quadratic     | Bubble sort          |
+| O(2ⁿ)        | Exponential   | Recursive Fibonacci  |
