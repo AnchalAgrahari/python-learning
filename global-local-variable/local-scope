@@ -12,5 +12,4 @@ def thefunction() :
     def innerfunction():
         print(fun)
     innerfunction()
-                   
-#thefunction() 
+                                      thefunction() 
